@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $bg-11-header-color;
+
+	&_container {
+		@include items-center-between;
+		@include sizesWH(100%, 68px);
+		@include container;
+		padding: 24px 24px 0 24px;
+		color: $text-color-light;
+
+		@media screen and (min-width: $screen-mobile) {
+			padding: 24px 48px 0 48px;
+		}
+
+		@media screen and (min-width: $screen-desktop) {
+			padding: 24px 96px 0 96px;
+		}
+	}
+}
+
+.header_buttons {
+	@include items-center-end;
+	gap: 16px;
+	width: auto;
+
+	&_contact {
+		display: none;
+		@include sizesWH(115px, 44px);
+
+		@media screen and (min-width: $screen-mobile) {
+			display: block;
+		}
+	}
+
+	&_burger {
+		@include sizesWH(44px, 44px);
+
+		@media screen and (min-width: $screen-desktop) {
+			display: none;
+		}
+	}
+}

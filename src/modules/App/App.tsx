@@ -1,12 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header/Header.component';
 
 
 function App() {
   return (
     <>
-      <header></header>
+      <Header />
       <main>
-        <h1>Color test</h1>
       </main>
       <footer></footer>
     </>
