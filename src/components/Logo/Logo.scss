@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.logo {
+	@include items-center-start;
+	width: auto;
+	gap: 10px;
+	font-family: $font-secondary;
+	font-size: $text-size-big;
+	line-height: $line-height-small-xl;
+	font-weight: 600;
+
+
+	&:hover .logo_letter {
+		transform: scale(1.05);
+	}
+	
+	&:focus .logo_letter {
+		transform: scale(1.05);
+	}
+
+	&>.logo_letter {
+		@include items-center;
+		@include sizesWH(33px, 33px);
+		border-radius: 50%;
+		background-color: $bg-2-color;
+		color: $text-color-dark;
+		transition: all 0.3s linear;
+	}
+}

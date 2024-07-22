@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.pr_button {
+	&_black {
+		@include button_primary;
+		color: $text-color-light;
+		background-color: $bg-10-color;
+		@include item_hover($bg-10-hover-color, $bg-10-color);
+	}
+
+	&_green {
+		@include button_primary;
+		color: $text-color-dark;
+		background-color: $button-bg-color-green;
+	}
+
+	&_light_green {
+		@include button_primary;
+		color: $text-color-green;
+		background-color: $link-bg-color-green;
+	}
+}

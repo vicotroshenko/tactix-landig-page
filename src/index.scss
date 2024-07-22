@@ -5,17 +5,23 @@
 @import './fonts/Figtree/figtree.css';
 
 body {
-  margin: 0;
+  margin: 68px 0 0 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Figtree', sans-serif;
+  background-color: $bg-1-color;
+  font-family: $font-primary;
   font-weight: 400;
-  line-height: 1.444;
+  line-height: $line-height-regular;
 }
 
 *, *::after, *::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
   padding: 0;
   margin: 0;
 }

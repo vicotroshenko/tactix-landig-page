@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.nav {
+	@include sizesWH(100%, 100%);
+	display: none;
+	width: auto;
+	margin-right: auto;
+	margin-left: 72px;
+
+	@media screen and (min-width: $screen-desktop) {
+		display: block;
+	}
+
+	&_list {
+		@include items-center;
+		list-style-type: none;
+		text-transform: capitalize;
+
+		&_item {
+			&:last-child {
+				text-transform: uppercase;
+			}
+		}
+
+		&_item>a {
+			@include sizesWH(100%, 100%);
+			@include item_hover($bg-10-hover-color, $bg-1-color);
+			display: block;
+			padding: 8px 12px;
+		}
+	}
+}

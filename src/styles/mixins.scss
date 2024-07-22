@@ -2,28 +2,64 @@
 $spaces-step: 4;
 
 @mixin items-center {
-  display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-@mixin padding($top: 0, $right: 0, $bottom : 0, $left: 0) {
-	padding-top: calc($spaces-step * $top)px;
-	padding-right: calc($spaces-step * $right)px;
-	padding-bottom: calc($spaces-step * $bottom)px;
-	padding-left: calc($spaces-step * $left)px;
+@mixin items-center-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-@mixin margin($top: 0, $right: 0, $bottom : 0, $left: 0) {
-	margin: calc($spaces-step * $top)px;
-	margin-right: calc($spaces-step * $right)px;
-	margin-bottom: calc($spaces-step * $bottom)px;
-	margin-left: calc($spaces-step * $left)px;
+@mixin items-center-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@mixin items-center-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 @mixin container {
 	width: 100%;
 	max-width: $screen-desktop;
+	min-width: 360px;
 	padding: 0 24px;
 	margin: 0 auto;
+}
+
+@mixin button_primary {
+	@include items-center;
+	width: 100%;
+	height: 100%;
+	min-width: 44px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+@mixin sizesWH($width, $height, $max-width: none, $max-height: none) {
+	width: $width;
+	height: $height;
+	max-width: $max-width;
+	max-height: $max-height;
+}
+
+@mixin item_hover($hover, $current) {
+	background-image: linear-gradient(45deg, $hover 50%, $current 50%, $current 100%);
+	background-size: 400% 400%;
+	background-position: 100% 50%;
+	transition: all 0.30s linear;
+
+	&:hover {
+		background-position: 0 50%;
+	}
+
+	&:focus {
+		background-position: 0 50%;
+	}
 }
