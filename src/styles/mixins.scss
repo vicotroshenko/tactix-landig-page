@@ -1,0 +1,29 @@
+@import './variables.scss';
+$spaces-step: 4;
+
+@mixin items-center {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin padding($top: 0, $right: 0, $bottom : 0, $left: 0) {
+	padding-top: calc($spaces-step * $top)px;
+	padding-right: calc($spaces-step * $right)px;
+	padding-bottom: calc($spaces-step * $bottom)px;
+	padding-left: calc($spaces-step * $left)px;
+}
+
+@mixin margin($top: 0, $right: 0, $bottom : 0, $left: 0) {
+	margin: calc($spaces-step * $top)px;
+	margin-right: calc($spaces-step * $right)px;
+	margin-bottom: calc($spaces-step * $bottom)px;
+	margin-left: calc($spaces-step * $left)px;
+}
+
+@mixin container {
+	width: 100%;
+	max-width: $screen-desktop;
+	padding: 0 24px;
+	margin: 0 auto;
+}
