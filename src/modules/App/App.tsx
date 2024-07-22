@@ -3,9 +3,13 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <>
+      <header></header>
+      <main>
+        
+      </main>
+      <footer></footer>
+    </>
   );
 }
 
