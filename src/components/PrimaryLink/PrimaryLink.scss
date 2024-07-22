@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-@mixin button_style($color, $bg, $hover) {
+@mixin link_style($color, $bg, $hover) {
 	@include button_primary;
 	@include items-center;
 	gap: 5px;
@@ -12,16 +12,16 @@
 	@include item_hover($hover, $bg);
 }
 
-.pr_button {
+.pr_link {
 	&_black {
-		@include button_style($text-color-light, $bg-10-color, $bg-10-hover-color);
+		@include link_style($text-color-light, $bg-10-color, $bg-10-hover-color);
 	}
 
 	&_green {
-		@include button_style($text-color-dark, $button-bg-color-green, $bg-10-hover-color);
+		@include link_style($text-color-dark, $button-bg-color-green, $bg-10-hover-color);
 	}
 
 	&_light_green {
-		@include button_style($text-color-green, $link-bg-color-green, $bg-10-hover-color);
+		@include link_style($text-color-green, $link-bg-color-green, $link-bg-color-green-hover);
 	}
 }
