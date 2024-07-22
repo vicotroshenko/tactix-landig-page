@@ -6,7 +6,6 @@ function App() {
     <>
       <header></header>
       <main>
-        <h1>Color test</h1>
       </main>
       <footer></footer>
     </>
