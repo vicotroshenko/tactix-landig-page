@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
 
 .header {
 	position: fixed;
@@ -9,24 +10,25 @@
 	background-color: $bg-11-header-color;
 
 	&_container {
-		@include items-center-between;
+		@extend %items-center-between;
 		@include sizesWH(100%, 68px);
-		@include container;
+		@extend %container;
+
 		padding: 24px 24px 0 24px;
 		color: $text-color-light;
 
-		@media screen and (min-width: $screen-mobile) {
+		@include responsive(tablet) {
 			padding: 24px 48px 0 48px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			padding: 24px 96px 0 96px;
 		}
 	}
 }
 
 .header_buttons {
-	@include items-center-end;
+	@extend %items-center-end;
 	gap: 16px;
 	width: auto;
 
@@ -34,7 +36,7 @@
 		display: none;
 		@include sizesWH(115px, 44px);
 
-		@media screen and (min-width: $screen-mobile) {
+		@include responsive(mobile) {
 			display: block;
 		}
 	}
@@ -42,7 +44,7 @@
 	&_burger {
 		@include sizesWH(44px, 44px);
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			display: none;
 		}
 	}

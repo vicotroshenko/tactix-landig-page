@@ -1,18 +1,6 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
-
-@mixin revers-box {
-	display: flex;
-	flex-direction: column-reverse;
-
-	& .inn_card_image {
-		margin-bottom: 40px;
-
-		@media screen and (min-width: $screen-desktop) {
-			margin: 0px auto 40px auto;
-		}
-	}
-}
+@import '../../../styles/placeholders.scss';
 
 .inn_card {
 	width: 100%;
@@ -20,43 +8,10 @@
 	padding: 40px 24px;
 	background-color: $bg-6-color;
 
-	@media screen and (min-width: $screen-tablet) {
+	@include responsive(tablet) {
 		padding: 64px 56px;
 	}
 
-	&:first-child {
-		background-color: $bg-1-color;
-		color: $text-color-light;
-
-		@media screen and (min-width: $screen-desktop) {
-			@include items-center-between;
-		}
-
-		& .inn_card_icon {
-			background-color: $bg-2-color;
-		}
-	}
-
-	&:nth-child(2) {
-		@include revers-box;
-		background-color: $bg-6-color;
-		color: $text-color-light;
-
-	}
-
-	&:nth-child(3) {
-		@include revers-box;
-		background-color: $bg-7-color;
-
-	}
-
-	&:last-child {
-		background-color: $bg-2-color;
-
-		& .inn_card_icon {
-			background-color: $bg-6-color
-		}
-	}
 
 	&_icon {
 		@include sizesWH(52px, 52px);
@@ -64,18 +19,19 @@
 		border-radius: 50%;
 		margin-bottom: 24px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			@include sizesWH(60px, 60px);
 		}
 	}
 
 	&_text {
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			max-width: 400px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			max-width: 480px;
+
 		}
 
 		&>h3 {
@@ -85,15 +41,15 @@
 			line-height: $line-height-small;
 			letter-spacing: -0.016em;
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				max-width: none;
 				font-size: $text-size-large-l;
 			}
 
-			@media screen and (min-width: $screen-desktop) {
-				max-width: none;
+			@include responsive(desktop) {
 				font-size: $text-size-large-ll;
 			}
+
 		}
 
 		&>p {
@@ -102,7 +58,7 @@
 			letter-spacing: -0.005em;
 			margin-bottom: 40px;
 
-			@media screen and (min-width: $screen-desktop) {
+			@include responsive(desktop) {
 				margin-bottom: 0;
 			}
 		}
@@ -111,11 +67,11 @@
 	&:first-child h3 {
 		margin-bottom: 24px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			font-size: $text-size-large-xl;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			font-size: $text-size-large-h1;
 		}
 	}
@@ -123,11 +79,11 @@
 	&:last-child h3 {
 		margin-bottom: 40px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			margin-bottom: 56px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			font-size: $text-size-large-h1;
 		}
 	}
@@ -136,12 +92,12 @@
 		@include sizesWH(100%, 292px, 292px);
 		margin: 0 auto;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			margin-left: 0;
 			@include sizesWH(100%, 420px, 420px);
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			@include sizesWH(100%, 296px, 296px);
 		}
 
@@ -152,26 +108,27 @@
 	}
 
 	&_set_images {
-		@include items-center;
+		@extend %items-center;
 		flex-direction: column;
 		gap: 32px;
 		padding: 32px 0;
 		border-top: 1px solid rgba(36, 98, 65, 0.1);
 		border-bottom: 1px solid rgba(36, 98, 65, 0.1);
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			flex-direction: row;
 			gap: 38px;
 		}
 
+
 		&>div {
 			@include sizesWH(168px, 38px);
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				@include sizesWH(128px, 30px);
 			}
 
-			@media screen and (min-width: $screen-desktop) {
+			@include responsive(desktop) {
 				@include sizesWH(160px, 38px);
 			}
 		}

@@ -1,23 +1,25 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
 
 .hero {
 	width: 100%;
 	color: $text-color-light;
 
 	&_container {
-		@include container;
+		@extend %container;
 		padding-top: 120px;
 		padding-bottom: 96px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			padding-top: 144px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			padding-top: 179px;
 			padding-bottom: 40px;
 		}
+
 	}
 
 	&_link_arrow {
@@ -30,7 +32,7 @@
 		max-width: 600px;
 		margin: 0 auto 40px auto;
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			max-width: 1064px;
 		}
 
@@ -41,11 +43,11 @@
 			line-height: $line-height-small-l;
 			font-weight: 600;
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				font-size: $text-size-large-h1;
 			}
 
-			@media screen and (min-width: $screen-desktop) {
+			@include responsive(desktop) {
 				font-size: $text-size-large-h1-xl;
 			}
 		}
@@ -58,7 +60,7 @@
 	}
 
 	&_buttons {
-		@include items-center;
+		@extend %items-center;
 		flex-direction: column;
 		width: 100%;
 		max-width: 345px;
@@ -66,25 +68,27 @@
 		row-gap: 12px;
 		margin: 0 auto;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			flex-direction: row;
 			max-width: none;
 		}
+
 
 		&>div:first-child {
 			width: 100%;
 			height: 62px;
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				max-width: 246px;
 			}
+
 		}
 
 		&>div:last-child {
 			width: 100%;
 			height: 62px;
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				max-width: 167px;
 			}
 		}
@@ -93,20 +97,18 @@
 	&_actions_images {
 		width: 100%;
 		max-width: 1138px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %items-center;
 		flex-wrap: wrap-reverse;
 		margin: 0 auto;
 		gap: 80px;
 		margin-bottom: 80px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			gap: 104px;
 			margin-bottom: 104px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			gap: 0;
 			align-items: flex-start;
 			flex-wrap: nowrap;
@@ -116,11 +118,11 @@
 		&_1 {
 			@include sizesWH(320px, 320px);
 
-			@media screen and (min-width: $screen-tablet) {
+			@include responsive(tablet) {
 				@include sizesWH(360px, 360px);
 			}
 
-			@media screen and (min-width: $screen-desktop) {
+			@include responsive(tablet) {
 				@include sizesWH(200px, 200px);
 				position: relative;
 				top: -16px;
@@ -133,7 +135,7 @@
 			@include sizesWH(200px, 200px);
 			min-width: 200px;
 
-			@media screen and (min-width: $screen-desktop) {
+			@include responsive(desktop) {
 				position: relative;
 				top: -16px;
 				display: block;
@@ -147,7 +149,7 @@
 		margin: 0 auto;
 		text-align: center;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			max-width: 100%;
 		}
 	}

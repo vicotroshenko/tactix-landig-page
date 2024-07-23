@@ -1,9 +1,10 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
 
 @mixin button_style($color, $bg, $hover) {
-	@include button_primary;
-	@include items-center;
+	@extend %button_primary;
+	@extend %items-center;
 	gap: 5px;
 	margin: 0 auto;
 	color: $color;
