@@ -1,15 +1,16 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
 
 .inn_title {
 	max-width: 297px;
 	margin: 0 auto;
 
-	@media screen and (min-width: $screen-tablet) {
+	@include responsive(tablet) {
 		max-width: 520px;
 	}
 
-	@media screen and (min-width: $screen-desktop) {
+	@include responsive(desktop) {
 		max-width: 640px;
 	}
 
@@ -19,12 +20,12 @@
 		letter-spacing: -0.016em;
 		margin-bottom: 16px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			font-size: $text-size-large-xxl;
 			margin-bottom: 20px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			font-size: $text-size-large-h1-l;
 		}
 
@@ -40,12 +41,12 @@
 		margin-bottom: 68px;
 		max-width: 297px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			max-width: 360px;
 			margin-bottom: 96px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			margin-bottom: 120px;
 		}
 	}

@@ -1,20 +1,34 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+%revers-box {
+	display: flex;
+	flex-direction: column-reverse;
+
+	& .inn_card_image {
+		margin-bottom: 40px;
+
+		@include responsive(desktop) {
+			margin: 0px auto 40px auto;
+		}
+	}
+}
 
 .inn {
 	width: 100%;
 	background-color: $bg-3-color;
 
 	&_container {
-		@include container;
+		@extend %container;
 		padding-top: 56px;
 		padding-bottom: 88px;
 
-		@media screen and (min-width: $screen-tablet) {
+		@include responsive(tablet) {
 			padding-top: 80px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			padding-top: 104px;
 		}
 	}
@@ -27,19 +41,53 @@
 		list-style-type: none;
 		max-width: 944px;
 		margin: 0 auto;
-		@media screen and (min-width: $screen-tablet) {
+
+		@include responsive(tablet) {
 			gap: 16px;
 		}
 
-		@media screen and (min-width: $screen-desktop) {
+		@include responsive(desktop) {
 			grid-template-columns: 464px 464px;
+		}
 
-			&>li:first-child {
+		&>li:first-child {
+			background-color: $bg-1-color;
+			color: $text-color-light;
+
+			@include responsive(desktop) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 				grid-column: 1 / 4;
 			}
 
-			&>li:last-child {
+			& .inn_card_icon {
+				background-color: $bg-2-color;
+			}
+		}
+
+		&>li:nth-child(2) {
+			@extend %revers-box;
+			background-color: $bg-6-color;
+			color: $text-color-light;
+
+		}
+
+		&>li:nth-child(3) {
+			@extend %revers-box;
+			background-color: $bg-7-color;
+
+		}
+
+		&>li:last-child {
+			background-color: $bg-2-color;
+
+			@include responsive(desktop) {
 				grid-column: 1 / 4;
+			}
+
+			& .inn_card_icon {
+				background-color: $bg-6-color
 			}
 		}
 	}

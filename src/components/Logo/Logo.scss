@@ -1,9 +1,9 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
-
+@import '../../styles/placeholders.scss';
 
 .logo {
-	@include items-center-start;
+	@extend %items-center-start;
 	width: auto;
 	gap: 10px;
 	font-family: $font-secondary;
@@ -21,7 +21,7 @@
 	}
 
 	&>.logo_letter {
-		@include items-center;
+		@extend %items-center;
 		@include sizesWH(33px, 33px);
 		border-radius: 50%;
 		background-color: $bg-2-color;

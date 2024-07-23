@@ -1,5 +1,6 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
 
 .nav {
 	@include sizesWH(100%, 100%);
@@ -8,12 +9,12 @@
 	margin-right: auto;
 	margin-left: 72px;
 
-	@media screen and (min-width: $screen-desktop) {
+	@include responsive(desktop) {
 		display: block;
 	}
 
 	&_list {
-		@include items-center;
+		@extend %items-center;
 		list-style-type: none;
 		text-transform: capitalize;
 
