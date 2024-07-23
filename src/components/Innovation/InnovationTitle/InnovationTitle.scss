@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.inn_title {
+	max-width: 297px;
+	margin: 0 auto;
+
+	@media screen and (min-width: $screen-tablet) {
+		max-width: 520px;
+	}
+
+	@media screen and (min-width: $screen-desktop) {
+		max-width: 640px;
+	}
+
+	&>h2 {
+		font-size: $text-size-large;
+		line-height: $line-height-small;
+		letter-spacing: -0.016em;
+		margin-bottom: 16px;
+
+		@media screen and (min-width: $screen-tablet) {
+			font-size: $text-size-large-xxl;
+			margin-bottom: 20px;
+		}
+
+		@media screen and (min-width: $screen-desktop) {
+			font-size: $text-size-large-h1-l;
+		}
+
+		&>.inn_title_colorized {
+			color: $text-color-secondary-1;
+		}
+	}
+
+	&>p {
+		font-size: $text-size-small;
+		line-height: $line-height-regular;
+		letter-spacing: -0.005em;
+		margin-bottom: 68px;
+		max-width: 297px;
+
+		@media screen and (min-width: $screen-tablet) {
+			max-width: 360px;
+			margin-bottom: 96px;
+		}
+
+		@media screen and (min-width: $screen-desktop) {
+			margin-bottom: 120px;
+		}
+	}
+}
