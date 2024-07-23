@@ -1,10 +1,13 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
+
+
 import { ReactComponent as HeroImage1 } from '../../assets/images/svg/hero-1.svg';
 import { ReactComponent as HeroImage2 } from '../../assets/images/svg/hero-2.svg';
 import PrimaryLink from '../PrimaryLink/PrimaryLink.component';
 import './Hero.scss';
+
 
 const Hero = () => {
   return (

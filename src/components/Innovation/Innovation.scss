@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.inn {
+	width: 100%;
+	background-color: $bg-3-color;
+
+	&_container {
+		@include container;
+		padding-top: 56px;
+		padding-bottom: 88px;
+
+		@media screen and (min-width: $screen-tablet) {
+			padding-top: 80px;
+		}
+
+		@media screen and (min-width: $screen-desktop) {
+			padding-top: 104px;
+		}
+	}
+
+	&_list {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 1fr;
+		gap: 12px;
+		list-style-type: none;
+		max-width: 944px;
+		margin: 0 auto;
+		@media screen and (min-width: $screen-tablet) {
+			gap: 16px;
+		}
+
+		@media screen and (min-width: $screen-desktop) {
+			grid-template-columns: 464px 464px;
+
+			&>li:first-child {
+				grid-column: 1 / 4;
+			}
+
+			&>li:last-child {
+				grid-column: 1 / 4;
+			}
+		}
+	}
+}
