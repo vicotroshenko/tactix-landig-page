@@ -1,7 +1,14 @@
 import React from 'react';
 
-import { DigitalService, Header, Hero, Innovation } from '../../components';
-import StrategicFramework from '../../components/StrategicFramework/StrategicFramework.component';
+import {
+  DigitalService,
+  Header,
+  Hero,
+  Innovation,
+  Performance,
+  StrategicFramework,
+  Voices,
+} from '../../components';
 
 function App() {
   return (
@@ -11,7 +18,9 @@ function App() {
         <Hero />
         <Innovation />
         <DigitalService />
-        <StrategicFramework/>
+        <StrategicFramework />
+        <Voices />
+        <Performance />
       </main>
       <footer></footer>
     </>

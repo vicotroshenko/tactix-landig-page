@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+.performance {
+	width: 100%;
+	color: $bg-2-color;
+	background-color: $bg-1-color;
+
+	&_container {
+		@extend %section_container;
+	}
+
+	&_list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		justify-items: center;
+		gap: 12px;
+		list-style-type: none;
+
+		@include responsive(tablet) {
+			grid-template-columns: repeat(2, minmax(360px, 464px));
+			gap: 16px;
+		}
+
+		&>li:last-child {
+			@include responsive(tablet) {
+				grid-column: -3 / -1;
+			}
+
+			@include responsive(desktop) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
+
+}
