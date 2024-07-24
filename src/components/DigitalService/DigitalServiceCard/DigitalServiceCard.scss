@@ -1,0 +1,44 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
+
+.dig_card {
+	background-color: $bg-2-color;
+	border-radius: 40px;
+	padding: 32px 24px 40px 24px;
+
+	@include responsive(tablet) {
+		padding: 56px 56px 64px 56px
+	}
+
+	&_icon {
+		@extend %circle_icon;
+		background-color: $bg-12-color;
+		margin-bottom: 40px;
+
+		@include responsive(tablet) {
+			margin-bottom: 56px;
+		}
+	}
+
+	& h3 {
+		font-size: $text-size-big-ll;
+		line-height: $line-height-small;
+		letter-spacing: -0.016em;
+		margin-bottom: 12px;
+
+		@include responsive(tablet) {
+			font-size: $text-size-big-l;
+		}
+
+		@include responsive(desktop) {
+			font-size: $text-size-large;
+		}
+	}
+
+	&_text {
+		font-size: $text-size-regular;
+		line-height: $line-height-regular;
+		letter-spacing: -0.005em;
+	}
+}

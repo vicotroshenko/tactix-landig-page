@@ -20,17 +20,7 @@
 	background-color: $bg-3-color;
 
 	&_container {
-		@extend %container;
-		padding-top: 56px;
-		padding-bottom: 88px;
-
-		@include responsive(tablet) {
-			padding-top: 80px;
-		}
-
-		@include responsive(desktop) {
-			padding-top: 104px;
-		}
+		@extend %section_container;
 	}
 
 	&_list {
@@ -61,6 +51,10 @@
 				grid-column: 1 / 4;
 			}
 
+			& p {
+				color: $text-color-secondary-4;
+			}
+
 			& .inn_card_icon {
 				background-color: $bg-2-color;
 			}
@@ -71,12 +65,18 @@
 			background-color: $bg-6-color;
 			color: $text-color-light;
 
+			& p {
+				color: $text-color-secondary-4;
+			}
 		}
 
 		&>li:nth-child(3) {
 			@extend %revers-box;
 			background-color: $bg-7-color;
 
+			& p {
+				color: $text-color-secondary-5;
+			}
 		}
 
 		&>li:last-child {

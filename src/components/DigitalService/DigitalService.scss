@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+
+.dig_service {
+	background-color: $bg-4-color;
+
+	&_container {
+		@extend %section_container;
+	}
+
+	&_list {
+		width: 100%;
+		display: grid;
+		justify-items: center;
+		list-style-type: none;
+		grid-template-columns: 1fr;
+		gap: 12px;
+		margin: 0 auto;
+
+		@include responsive(tablet) {
+			gap: 16px;
+		}
+
+		@include responsive(desktop) {
+			width: min-content;
+			grid-template-columns: 463px 463px;
+			grid-template-rows: repeat(2, 400px);
+			gap: 18px;
+		}
+
+		&>li {
+			max-width: 738px;
+
+			& p {
+				color: $text-color-secondary-5;
+			}
+
+			&:last-child {
+				background-color: $bg-1-color;
+				color: $text-color-light;
+
+				& p {
+					color: $text-color-secondary-4;
+				}
+			}
+
+			& .inn_card_icon {
+				background-color: $bg-2-color;
+			}
+		}
+	}
+
+	&_list>li:last-child {
+		@include responsive(desktop) {
+			max-width: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			grid-column: -3 / -1;
+		}
+	}
+}
