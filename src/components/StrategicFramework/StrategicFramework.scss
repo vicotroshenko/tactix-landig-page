@@ -1,0 +1,72 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+.strategy {
+	width: 100%;
+	background-color: $bg-5-color;
+
+	&_container {
+		@extend %section_container;
+
+	}
+
+	&_list {
+		width: 100%;
+		max-width: 738px;
+		list-style-type: none;
+		display: grid;
+		justify-items: center;
+		gap: 12px;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+
+		&>li:first-child {
+			background-color: $bg-8-color;
+		}
+
+		&>li:nth-child(2) {
+			background-color: $bg-9-color;
+		}
+
+		&>li:last-child {
+			background-color: $bg-2-color;
+		}
+
+		@include responsive(desktop) {
+			max-width: none;
+		}
+
+		&>h3 {
+			font-size: $text-size-big-ll;
+
+			@include responsive(tablet) {
+				font-size: $text-size-large-l;
+			}
+
+			@include responsive(desktop) {
+				font-size: $text-size-large-ll;
+			}
+		}
+
+		& .inn_card_text {
+			margin-bottom: 40px;
+		}
+
+		@include responsive(desktop) {
+			width: min-content;
+			gap: 16px;
+			grid-template-columns: 464px 464px;
+
+			&>li:last-child {
+				grid-column: -3 / -1;
+				display: flex;
+				justify-content: space-between;
+
+				& .inn_card_text {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
