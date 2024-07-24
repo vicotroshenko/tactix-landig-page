@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/tactix-landig-page/static/css/main.7fb6a291.css",
-    "main.js": "/tactix-landig-page/static/js/main.0221c3db.js",
-    "static/media/hero-1.svg": "/tactix-landig-page/static/media/hero-1.883f7df05c1ba0fde957d7bb20d82fb6.svg",
-    "static/media/hero-2.svg": "/tactix-landig-page/static/media/hero-2.e7aafd59ddaeb301b0718d76a57cd447.svg",
+    "main.css": "/tactix-landig-page/static/css/main.12bd892e.css",
+    "main.js": "/tactix-landig-page/static/js/main.029094c1.js",
+    "static/media/hero-1.svg": "/tactix-landig-page/static/media/hero-1.443cedac89307131c56e8ac8e2416ad6.svg",
+    "static/media/hero-2.svg": "/tactix-landig-page/static/media/hero-2.7f2f5c241e7690a4866525dbeff954d2.svg",
     "static/media/ClashDisplay-Variable.ttf": "/tactix-landig-page/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
     "static/media/ClashDisplay-Light.ttf": "/tactix-landig-page/static/media/ClashDisplay-Light.65f6b9963b2bc29f88d0.ttf",
     "static/media/ClashDisplay-Extralight.ttf": "/tactix-landig-page/static/media/ClashDisplay-Extralight.4b744d1b1e49894d8db2.ttf",
@@ -11,6 +11,7 @@
     "static/media/ClashDisplay-Semibold.ttf": "/tactix-landig-page/static/media/ClashDisplay-Semibold.fe7b20eb73776202f79f.ttf",
     "static/media/ClashDisplay-Regular.ttf": "/tactix-landig-page/static/media/ClashDisplay-Regular.810c6b29f523c5d0ad44.ttf",
     "static/media/ClashDisplay-Bold.ttf": "/tactix-landig-page/static/media/ClashDisplay-Bold.476ca58563829751989f.ttf",
+    "static/media/digital-illustration.svg": "/tactix-landig-page/static/media/digital-illustration.61e30ebf22e43716f90b88e59c1fed79.svg",
     "static/media/Figtree-ExtraBold.ttf": "/tactix-landig-page/static/media/Figtree-ExtraBold.4f69ac3b22741c171be3.ttf",
     "static/media/Figtree-SemiBold.ttf": "/tactix-landig-page/static/media/Figtree-SemiBold.e7c36b47e6cec9d98046.ttf",
     "static/media/Figtree-Black.ttf": "/tactix-landig-page/static/media/Figtree-Black.2847ab7c07426fce75c3.ttf",
@@ -18,6 +19,7 @@
     "static/media/Figtree-Medium.ttf": "/tactix-landig-page/static/media/Figtree-Medium.9f5bdeaa4791672a1407.ttf",
     "static/media/Figtree-Regular.ttf": "/tactix-landig-page/static/media/Figtree-Regular.eb52c4570a34a02898c8.ttf",
     "static/media/ClashDisplay-Variable.woff2": "/tactix-landig-page/static/media/ClashDisplay-Variable.27b50dcdd5ced9f74da0.woff2",
+    "static/media/facebook_flatline.png": "/tactix-landig-page/static/media/facebook_flatline.e96a5c71c3d17d93c990.png",
     "static/media/ClashDisplay-Variable.woff": "/tactix-landig-page/static/media/ClashDisplay-Variable.d2735542013ee4bde5ad.woff",
     "static/media/ClashDisplay-Semibold.woff": "/tactix-landig-page/static/media/ClashDisplay-Semibold.52ec5aaabca80f39cd4d.woff",
     "static/media/ClashDisplay-Medium.woff": "/tactix-landig-page/static/media/ClashDisplay-Medium.d059aba57d21630bbeb1.woff",
@@ -25,18 +27,31 @@
     "static/media/ClashDisplay-Light.woff": "/tactix-landig-page/static/media/ClashDisplay-Light.2d96b3662f1262b6c456.woff",
     "static/media/ClashDisplay-Bold.woff": "/tactix-landig-page/static/media/ClashDisplay-Bold.ae5f509371f2e91d237c.woff",
     "static/media/ClashDisplay-Extralight.woff": "/tactix-landig-page/static/media/ClashDisplay-Extralight.698f5feb7b168e80bc3b.woff",
+    "static/media/section_3_3.png": "/tactix-landig-page/static/media/section_3_3.4be1d130857314b55d60.png",
+    "static/media/section_2_3.png": "/tactix-landig-page/static/media/section_2_3.fa6e185bb5a4f177bd0d.png",
+    "static/media/section_3_2.png": "/tactix-landig-page/static/media/section_3_2.47edb22a8c96bb032016.png",
+    "static/media/section_2.png": "/tactix-landig-page/static/media/section_2.d80b7d1a0396951bbe1a.png",
     "static/media/ClashDisplay-Light.woff2": "/tactix-landig-page/static/media/ClashDisplay-Light.2ad87a1106f296704c85.woff2",
     "static/media/ClashDisplay-Semibold.woff2": "/tactix-landig-page/static/media/ClashDisplay-Semibold.aafc18ae9600df8496dc.woff2",
     "static/media/ClashDisplay-Medium.woff2": "/tactix-landig-page/static/media/ClashDisplay-Medium.88a32cc8fc026d95af05.woff2",
+    "static/media/section_3_1.png": "/tactix-landig-page/static/media/section_3_1.cd048b53a18184077b49.png",
     "static/media/ClashDisplay-Regular.woff2": "/tactix-landig-page/static/media/ClashDisplay-Regular.98b52bdf102085f28108.woff2",
     "static/media/ClashDisplay-Bold.woff2": "/tactix-landig-page/static/media/ClashDisplay-Bold.e2f8628a6f360f644a76.woff2",
     "static/media/ClashDisplay-Extralight.woff2": "/tactix-landig-page/static/media/ClashDisplay-Extralight.8f792be62d02ca420577.woff2",
+    "static/media/Rocket.svg": "/tactix-landig-page/static/media/Rocket.7f4de65cba4c82b3b95900634ee03a44.svg",
+    "static/media/digital-3.svg": "/tactix-landig-page/static/media/digital-3.88afa1facbfdf0d2f0e14fb8e37a9fbb.svg",
+    "static/media/Shape.svg": "/tactix-landig-page/static/media/Shape.a95c02d0ece4263a48fde823445e3e1b.svg",
+    "static/media/digital-2.svg": "/tactix-landig-page/static/media/digital-2.984a5f30665e851be8468ce2a64f7dc8.svg",
+    "static/media/Premium.svg": "/tactix-landig-page/static/media/Premium.eef6bfc9de06599f386a918bd55a5c77.svg",
+    "static/media/digital-1.svg": "/tactix-landig-page/static/media/digital-1.95b5eeec9af15cd4a92e7331885da03a.svg",
     "index.html": "/tactix-landig-page/index.html",
-    "main.7fb6a291.css.map": "/tactix-landig-page/static/css/main.7fb6a291.css.map",
-    "main.0221c3db.js.map": "/tactix-landig-page/static/js/main.0221c3db.js.map"
+    "static/media/digital-5.svg": "/tactix-landig-page/static/media/digital-5.812099e52fd7f380ba49a5429daa1b59.svg",
+    "static/media/digital-4.svg": "/tactix-landig-page/static/media/digital-4.0bb306ec76420bae8f3a763ca2b9d3d9.svg",
+    "main.12bd892e.css.map": "/tactix-landig-page/static/css/main.12bd892e.css.map",
+    "main.029094c1.js.map": "/tactix-landig-page/static/js/main.029094c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fb6a291.css",
-    "static/js/main.0221c3db.js"
+    "static/css/main.12bd892e.css",
+    "static/js/main.029094c1.js"
   ]
 }
