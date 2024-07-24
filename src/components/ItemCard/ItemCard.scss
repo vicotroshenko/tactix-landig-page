@@ -97,6 +97,7 @@
 		}
 
 		@include responsive(desktop) {
+			margin: 0 auto;
 			@include sizesWH(100%, 296px, 296px);
 		}
 
