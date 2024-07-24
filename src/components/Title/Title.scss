@@ -1,35 +1,36 @@
-@import '../../../styles/variables.scss';
-@import '../../../styles/mixins.scss';
-@import '../../../styles/placeholders.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
 
 .inn_title {
 	max-width: 297px;
 	margin: 0 auto;
+	margin-bottom: 68px;
 
 	@include responsive(tablet) {
 		max-width: 520px;
+		margin-bottom: 96px;
 	}
 
 	@include responsive(desktop) {
 		max-width: 640px;
+		margin-bottom: 120px;
 	}
 
 	&>h2 {
 		font-size: $text-size-large;
 		line-height: $line-height-small;
 		letter-spacing: -0.016em;
-		margin-bottom: 16px;
 
 		@include responsive(tablet) {
 			font-size: $text-size-large-xxl;
-			margin-bottom: 20px;
 		}
 
 		@include responsive(desktop) {
 			font-size: $text-size-large-h1-l;
 		}
 
-		&>.inn_title_colorized {
+		&>.title_first_color {
 			color: $text-color-secondary-1;
 		}
 	}
@@ -38,16 +39,12 @@
 		font-size: $text-size-small;
 		line-height: $line-height-regular;
 		letter-spacing: -0.005em;
-		margin-bottom: 68px;
 		max-width: 297px;
+		padding-top: 16px;
 
 		@include responsive(tablet) {
 			max-width: 360px;
-			margin-bottom: 96px;
-		}
-
-		@include responsive(desktop) {
-			margin-bottom: 120px;
+			padding-top: 20px;
 		}
 	}
 }

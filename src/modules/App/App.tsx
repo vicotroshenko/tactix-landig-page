@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Header from '../../components/Header/Header.component';
-import Hero from '../../components/Hero/Hero';
-import Innovation from '../../components/Innovation/Innovation.component';
+import { DigitalService, Header, Hero, Innovation } from '../../components';
 
 function App() {
   return (
@@ -10,7 +8,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Innovation/>
+        <Innovation />
+        <DigitalService />
       </main>
       <footer></footer>
     </>

@@ -2,19 +2,16 @@ import classNames from 'classnames';
 import { nanoid } from 'nanoid';
 import React from 'react';
 
-import './InnovationCard.scss';
 
-type InnovationData = {
-  icon?: string;
-  title: string;
-  text?: string;
-  picture: string | string[];
-};
+
+import { CardData } from '../../types/card.type';
+import './ItemCard.scss';
+
 
 interface InnovationCardProps {
-  data: InnovationData;
+  data: CardData;
 }
-const InnovationCard: React.FC<InnovationCardProps> = ({ data }) => {
+const ItemCard: React.FC<InnovationCardProps> = ({ data }) => {
   return (
     <li className="inn_card">
       <div>
@@ -22,7 +19,7 @@ const InnovationCard: React.FC<InnovationCardProps> = ({ data }) => {
           <div className="inn_card_icon">
             <img
               src={data.icon}
-              alt="rocket"
+              alt="card icon"
             />
           </div>
         )}
@@ -58,4 +55,4 @@ const InnovationCard: React.FC<InnovationCardProps> = ({ data }) => {
   );
 };
 
-export default InnovationCard;
+export default ItemCard;
