@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
+
+.custom_field {
+	position: relative;
+
+	&>input {
+		width: 100%;
+		border: 1px solid $bg-13-input-color;
+		padding: 15px 24px;
+		border-radius: 12px;
+		font-size: $text-size-regular;
+		line-height: $line-height-regular;
+		letter-spacing: -0.005em;
+		color: $text-color-secondary-5;
+
+		&:focus+label {
+			top: 0;
+		}
+
+		&:not(:placeholder-shown)+label {
+			top: 0;
+		}
+
+	}
+
+	&>label {
+		position: absolute;
+		top: 50%;
+		left: 24px;
+		transform: translateY(-50%);
+		background-color: $bg-2-color;
+		color: $text-color-secondary-5;
+		text-transform: capitalize;
+		transition: top 0.3s linear;
+	}
+
+}
+
+.error {
+	font-size: $text-size-small;
+	line-height: $line-height-regular;
+	color: red;
+	text-indent: 10px;
+	margin-bottom: -7px;
+}

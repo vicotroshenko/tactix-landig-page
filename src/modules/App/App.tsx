@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  ContactUs,
   DigitalService,
   Header,
   Hero,
@@ -22,6 +23,7 @@ function App() {
         <StrategicFramework />
         <Voices />
         <Performance />
+        <ContactUs />
         <Questions />
       </main>
       <footer></footer>
