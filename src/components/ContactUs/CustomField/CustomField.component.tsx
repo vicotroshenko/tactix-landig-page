@@ -19,10 +19,7 @@ const CustomField: React.FC<CustomFieldProps> = ({
   touched,
   ...props
 }) => {
-  console.log({
-    error: errors?.[name],
-    name,
-  });
+  
   return (
     <>
       <div className="custom_field">

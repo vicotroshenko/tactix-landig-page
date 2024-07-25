@@ -18,6 +18,7 @@ const Innovation = () => {
           title={title}
           underTitle={text}
           amount={3}
+          color='GREEN'
         />
         <ul className="inn_list">
           {data.map((item) => (

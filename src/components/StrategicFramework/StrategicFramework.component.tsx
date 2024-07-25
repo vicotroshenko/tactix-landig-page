@@ -14,6 +14,7 @@ const StrategicFramework = () => {
         <Title
           title={title}
           amount={3}
+          color='BLUE'
         />
         <ul className='strategy_list'>
           {data.map((item) => (

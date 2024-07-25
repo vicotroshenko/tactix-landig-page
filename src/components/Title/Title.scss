@@ -30,8 +30,24 @@
 			font-size: $text-size-large-h1-l;
 		}
 
-		&>.title_first_color {
+		&>.first_green {
 			color: $text-color-secondary-1;
+		}
+
+		&>.first_yellow {
+			color: $text-color-secondary-2;
+		}
+
+		&>.first_blue {
+			color: $text-color-secondary-3;
+		}
+
+		&>.first_grey {
+			color: $text-color-secondary-4;
+		}
+
+		&>.first_white {
+			color: $text-color-light;
 		}
 	}
 

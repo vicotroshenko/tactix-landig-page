@@ -18,6 +18,7 @@ const DigitalService = () => {
         <Title
           title={title}
           amount={2}
+          color='YELLOW'
         />
         <ul className="dig_service_list">
           {data.map((item) =>

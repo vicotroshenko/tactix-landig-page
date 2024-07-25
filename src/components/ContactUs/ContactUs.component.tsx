@@ -16,6 +16,7 @@ const ContactUs = () => {
         <Title
           title={title}
           amount={2}
+          color='WHITE'
         />
         <ul className="contact_us_list">
           {data.map(({ icon, text1, text2 }) => (

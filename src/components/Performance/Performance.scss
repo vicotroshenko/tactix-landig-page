@@ -26,6 +26,7 @@
 		}
 
 		&>li:last-child {
+			background-color: $bg-10-color;
 			@include responsive(tablet) {
 				grid-column: -3 / -1;
 			}
