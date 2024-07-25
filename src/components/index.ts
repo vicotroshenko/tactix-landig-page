@@ -7,3 +7,4 @@ export { default as StrategicFramework } from './StrategicFramework/StrategicFra
 export { default as Performance } from './Performance/Performance.component';
 export { default as Questions } from './Questions/Questions.component';
 export { default as ContactUs } from './ContactUs/ContactUs.component';
+export { default as Footer } from './Footer/Footer.component';
