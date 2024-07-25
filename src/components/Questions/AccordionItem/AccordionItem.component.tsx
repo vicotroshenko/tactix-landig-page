@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { act, useState } from 'react';
+import React, { useState } from 'react';
 import { FaPlus } from 'react-icons/fa6';
 
 import './AccordionItem.scss';

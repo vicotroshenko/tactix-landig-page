@@ -3,6 +3,7 @@ import React from 'react';
 import {
   ContactUs,
   DigitalService,
+  Footer,
   Header,
   Hero,
   Innovation,
@@ -23,10 +24,10 @@ function App() {
         <StrategicFramework />
         <Voices />
         <Performance />
-        <ContactUs />
         <Questions />
+        <ContactUs />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }

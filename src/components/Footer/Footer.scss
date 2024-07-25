@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+.footer {
+	width: 100%;
+	color: $text-color-light;
+
+	&_container {
+		@extend %container;
+		padding: 56px 24px;
+
+		@include responsive(tablet) {
+			padding: 80px 48px 64px 48px;
+		}
+
+		@include responsive(desktop) {
+			padding: 104px 248px 64px 248px;
+		}
+	}
+
+	&_top {
+		@extend %items-center-between;
+		padding-bottom: 16px;
+		border-bottom: 1px solid $button2-bg-color-green;
+
+		&>ul {
+			list-style-type: none;
+			@extend %items-center;
+
+			& a {
+				display: block;
+				padding: 12px;
+				transition: box-shadow 0.2s linear;
+
+				&:hover {
+					box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 5px 0px, rgba(255, 255, 255, 0.25) 0px 0px 1px 0px;
+				}
+			}
+		}
+	}
+
+	&_bottom {
+		@extend %items-center-between;
+		padding-top: 24px;
+		font-size: $text-size-small;
+		line-height: $line-height-regular;
+		color: $text-color-secondary-4;
+		letter-spacing: -0.005em;
+
+		@include responsive(tablet) {}
+	}
+}
