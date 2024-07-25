@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+.not_found {
+	width: 100%;
+	color: $text-color-light;
+	text-align: center;
+	margin-top: -68px;
+
+	&_container {
+		@extend %container;
+		height: 100vh;
+		padding: 40px 40px 40px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		& svg {
+			margin-bottom: 16px;
+		}
+
+
+	}
+
+	&_picture {
+		&>p {
+			margin-bottom: 40px;
+		}
+	}
+
+	&_bottom_text {
+		font-size: $text-size-small;
+		line-height: $line-height-regular;
+		color: $text-color-secondary-4;
+	}
+}

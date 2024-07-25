@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Logo.scss';
 
 const Logo = () => {
-	return (
-		<a href='/' className='logo'>
-			<span className='logo_letter'>T</span>
-			<span>Tactix.</span>
-		</a>
-	)
-}
+  return (
+    <Link
+      to={'/'}
+      className="logo"
+    >
+      <span className="logo_letter">T</span>
+      <span>Tactix.</span>
+    </Link>
+  );
+};
 
-export default Logo
+export default Logo;

@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 import './PrimaryLink.scss';
+import { Link } from 'react-router-dom';
 
 enum LinkStyle {
   black = 'pr_link_black',
@@ -23,13 +24,13 @@ const PrimaryLink: React.FC<PrimaryLinkProps> = ({
   ...props
 }) => {
   return (
-    <a
-      href={link}
+    <Link
+      to={link}
       {...props}
       className={classNames(LinkStyle[outline])}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
