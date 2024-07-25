@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
+
+.contact_us_form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: $bg-2-color;
+	border-radius: 28px;
+	padding: 32px 24px 40px 24px;
+	max-width: 738px;
+	color: $text-color-dark;
+
+	@include responsive(tablet) {
+		padding: 56px 56px 64px 56px;
+		border-radius: 40px;
+	}
+
+	@include responsive(desktop) {
+		max-width: 464px;
+	}
+
+	&_title {
+		margin-bottom: 12px;
+		font-size: $text-size-big-ll;
+		font-weight: 600;
+		line-height: $line-height-small;
+		letter-spacing: -0.016em;
+
+		@include responsive(tablet) {
+			font-size: $text-size-big-l;
+		}
+
+		@include responsive(desktop) {
+			font-size: $text-size-large;
+		}
+	}
+
+	&_text {
+		margin-bottom: 40px;
+		font-size: $text-size-regular;
+		color: $text-color-secondary-5;
+		letter-spacing: -0.005em;
+	}
+
+	& .custom_field {
+		&:not(:first-child) {
+			margin-top: 16px;
+		}
+	}
+}

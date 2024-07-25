@@ -10,7 +10,7 @@ enum ButtonsStyle {
 }
 
 interface PrimaryButtonProps
-  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'className'> {
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'className'> {
   children: React.ReactNode;
   outline: keyof typeof ButtonsStyle;
 }
