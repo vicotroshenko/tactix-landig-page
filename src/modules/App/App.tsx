@@ -6,6 +6,7 @@ import {
   Hero,
   Innovation,
   Performance,
+  Questions,
   StrategicFramework,
   Voices,
 } from '../../components';
@@ -21,6 +22,7 @@ function App() {
         <StrategicFramework />
         <Voices />
         <Performance />
+        <Questions />
       </main>
       <footer></footer>
     </>

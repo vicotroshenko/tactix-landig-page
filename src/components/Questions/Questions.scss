@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/placeholders.scss';
+
+.questions {
+	width: 100%;
+	background-color: $bg-1-color;
+	color: $bg-2-color;
+	&_container {
+		@extend %section_container;
+	}
+	&_list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		@include responsive(tablet) {
+			gap: 16px;
+		}
+		width: 100%;
+		list-style: none;
+	}
+}
