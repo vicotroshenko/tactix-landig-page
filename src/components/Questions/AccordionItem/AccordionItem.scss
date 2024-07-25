@@ -10,7 +10,7 @@
 	font-size: $text-size-regular;
 	line-height: $line-height-regular;
 	color: $bg-2-color;
-	
+
 	@include responsive(tablet) {
 		border-radius: 24px;
 	}
@@ -23,8 +23,21 @@
 		line-height: $line-height-regular;
 		font-weight: 600;
 		color: $bg-2-color;
+		text-align: left;
 		cursor: pointer;
 		z-index: 10;
+
+		&>p {
+			max-width: 213px;
+
+			@include responsive(tablet) {
+				max-width: 574px
+			}
+
+			@include responsive(desktop) {
+				max-width: 780px
+			}
+		}
 	}
 
 	&_button_icon {

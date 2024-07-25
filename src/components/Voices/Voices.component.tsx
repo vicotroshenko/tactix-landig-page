@@ -14,6 +14,7 @@ const Voices = () => {
         <Title
           title={title}
           amount={4}
+          color='GREY'
         />
         <ul className="voices_list">
           {data.map((item) => (

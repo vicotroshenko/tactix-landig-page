@@ -1,17 +1,31 @@
+import classNames from 'classnames';
 import React from 'react';
 
+
+
 import './Title.scss';
+
+
+enum ColorKey {
+  GREEN = 'green',
+  YELLOW = 'yellow',
+  BLUE = 'blue',
+  GREY = 'grey',
+  WHITE = 'white'
+}
 
 interface TitleProps {
   title: string;
   underTitle?: string;
   amount?: number;
+  color: keyof typeof ColorKey;
 }
 
 const Title: React.FC<TitleProps> = ({
   title,
   underTitle,
   amount = 3,
+  color,
 }) => {
   const divideText = (text: string, position: number) => {
     return {
@@ -27,7 +41,7 @@ const Title: React.FC<TitleProps> = ({
   return (
     <div className="inn_title">
       <h2>
-        <span className="title_first_color">{dividedTitle.cut}</span>{' '}
+        <span className={`first_${ColorKey[color]}`}>{dividedTitle.cut}</span>{' '}
         <span>{dividedTitle.rest}</span>
       </h2>
       {underTitle && <p>{underTitle}</p>}

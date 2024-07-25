@@ -15,7 +15,7 @@ const Performance = () => {
   return (
     <section className="performance">
       <div className="performance_container">
-        <Title title={title} amount={3}/>
+        <Title title={title} amount={3} color='GREY'/>
         <ul className="performance_list">
           {data.map((item) =>
             !item.icon ? (
