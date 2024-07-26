@@ -11,7 +11,7 @@ import data from './data';
 const title = 'Contact Us to Start Your Transformation';
 const ContactUs = () => {
   return (
-    <section className="contact_us">
+    <section className="contact_us" id='contact us'>
       <div className="contact_us_container">
         <Title
           title={title}

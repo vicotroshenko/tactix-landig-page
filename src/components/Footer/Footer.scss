@@ -23,21 +23,6 @@
 		@extend %items-center-between;
 		padding-bottom: 16px;
 		border-bottom: 1px solid $button2-bg-color-green;
-
-		&>ul {
-			list-style-type: none;
-			@extend %items-center;
-
-			& a {
-				display: block;
-				padding: 12px;
-				transition: box-shadow 0.2s linear;
-
-				&:hover {
-					box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 5px 0px, rgba(255, 255, 255, 0.25) 0px 0px 1px 0px;
-				}
-			}
-		}
 	}
 
 	&_bottom {

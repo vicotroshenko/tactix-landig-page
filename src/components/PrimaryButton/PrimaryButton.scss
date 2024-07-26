@@ -11,6 +11,7 @@
 	background-color: $bg;
 	text-transform: capitalize;
 	@include item_hover($hover, $bg);
+	font-weight: 600;
 }
 
 .pr_button {

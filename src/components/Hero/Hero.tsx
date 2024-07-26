@@ -11,12 +11,13 @@ import './Hero.scss';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero_container">
         <PrimaryLink
           outline="light_green"
-          style={{ width: 198, height: 44, marginBottom: 32 }}
-          link="/"
+          style={{ margin: '0 auto 32px auto' }}
+          link="faq"
+          size='small'
         >
           What Our Clients Say
           <FaArrowRight className="hero_link_arrow" />
@@ -32,22 +33,20 @@ const Hero = () => {
         <div className="hero_actions_images">
           <HeroImage1 className="hero_actions_images_1" />
           <div className="hero_buttons">
-            <div>
               <PrimaryLink
                 link="/"
                 outline="green"
+                size='medium'
               >
                 Schedule Consultation
               </PrimaryLink>
-            </div>
-            <div>
               <PrimaryLink
-                link="/"
+                link="service"
                 outline="black"
+                size='medium'
               >
                 Our Services
               </PrimaryLink>
-            </div>
           </div>
           <HeroImage2 className="hero_actions_images_2" />
         </div>

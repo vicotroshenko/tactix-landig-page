@@ -13,7 +13,7 @@ import { nanoid } from 'nanoid';
 const title = 'Digital Services Tailored to Elevate Your Brand';
 const DigitalService = () => {
   return (
-    <section className="dig_service">
+    <section className="dig_service" id="service">
       <div className="dig_service_container">
         <Title
           title={title}

@@ -9,12 +9,15 @@ import data from './data';
 const title = 'Voices of Success from Our Satisfied Clients';
 const Voices = () => {
   return (
-    <section className="voices">
+    <section
+      className="voices"
+      id="faq"
+    >
       <div className="voices_container">
         <Title
           title={title}
           amount={4}
-          color='GREY'
+          color="GREY"
         />
         <ul className="voices_list">
           {data.map((item) => (
