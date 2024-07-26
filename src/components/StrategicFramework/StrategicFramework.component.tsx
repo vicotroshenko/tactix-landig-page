@@ -9,7 +9,7 @@ import data from './data';
 const title = 'Our Strategic Framework for Excellence';
 const StrategicFramework = () => {
   return (
-    <section className="strategy">
+    <section className="strategy" id="approach">
       <div className="strategy_container">
         <Title
           title={title}

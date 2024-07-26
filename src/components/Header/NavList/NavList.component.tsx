@@ -3,7 +3,8 @@ import React from 'react';
 
 import './NavList.scss';
 
-const links = ['home', 'about', 'service', 'approach', 'faq'];
+export const links = ['home', 'about', 'service', 'approach', 'faq'];
+
 
 const NavList = () => {
   return (

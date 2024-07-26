@@ -12,7 +12,7 @@ const text =
 
 const Innovation = () => {
   return (
-    <section className="inn">
+    <section className="inn" id="about">
       <div className="inn_container">
         <Title
           title={title}

@@ -8,6 +8,7 @@
 	left: 0;
 	right: 0;
 	background-color: $bg-11-header-color;
+	z-index: 99;
 
 	&_container {
 		@extend %items-center-between;

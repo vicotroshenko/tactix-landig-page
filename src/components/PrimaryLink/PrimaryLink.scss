@@ -5,12 +5,13 @@
 @mixin link_style($color, $bg, $hover) {
 	@extend %button_primary;
 	@extend %items-center;
+	width: fit-content;
 	gap: 5px;
-	margin: 0 auto;
 	color: $color;
 	background-color: $bg;
 	text-transform: capitalize;
 	@include item_hover($hover, $bg);
+	font-weight: 600;
 }
 
 .pr_link {
@@ -24,5 +25,24 @@
 
 	&_light_green {
 		@include link_style($text-color-green, $link-bg-color-green, $link-bg-color-green-hover);
+	}
+
+	&_12 {
+		padding: 11px 21px;
+		font-size: 14px;
+	}
+
+	&_18 {
+		padding: 17px 31px;
+	}
+
+	&_20 {
+		font-size: 24px;
+		padding: 14px 28px 16px 28px;
+
+		@include responsive(tablet) {
+			font-size: 44px;
+			padding: 19px 47px 23px 47px;
+		}
 	}
 }
