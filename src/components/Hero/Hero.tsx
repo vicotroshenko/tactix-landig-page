@@ -1,23 +1,22 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
-
-
-import { ReactComponent as HeroImage1 } from '../../assets/images/svg/hero-1.svg';
-import { ReactComponent as HeroImage2 } from '../../assets/images/svg/hero-2.svg';
 import PrimaryLink from '../PrimaryLink/PrimaryLink.component';
+import { Hero1, Hero2 } from '../SVG';
 import './Hero.scss';
-
 
 const Hero = () => {
   return (
-    <section className="hero" id="home">
+    <section
+      className="hero"
+      id="home"
+    >
       <div className="hero_container">
         <PrimaryLink
           outline="light_green"
           style={{ margin: '0 auto 32px auto' }}
           link="faq"
-          size='small'
+          size="small"
         >
           What Our Clients Say
           <FaArrowRight className="hero_link_arrow" />
@@ -31,24 +30,28 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero_actions_images">
-          <HeroImage1 className="hero_actions_images_1" />
-          <div className="hero_buttons">
-              <PrimaryLink
-                link="/"
-                outline="green"
-                size='medium'
-              >
-                Schedule Consultation
-              </PrimaryLink>
-              <PrimaryLink
-                link="service"
-                outline="black"
-                size='medium'
-              >
-                Our Services
-              </PrimaryLink>
+          <div className="hero_actions_images_1">
+            <Hero1 />
           </div>
-          <HeroImage2 className="hero_actions_images_2" />
+          <div className="hero_buttons">
+            <PrimaryLink
+              link="/"
+              outline="green"
+              size="medium"
+            >
+              Schedule Consultation
+            </PrimaryLink>
+            <PrimaryLink
+              link="service"
+              outline="black"
+              size="medium"
+            >
+              Our Services
+            </PrimaryLink>
+          </div>
+          <div className="hero_actions_images_2">
+            <Hero2 />
+          </div>
         </div>
         <p className="hero_bottom_text">
           With innovative strategies and a results-driven approach, we empower

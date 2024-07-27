@@ -1,0 +1,8 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
+
+.hero_image_cover_2{
+	@include rotateImage('../assets/images/svg/hero-2-1.svg');
+}
+
