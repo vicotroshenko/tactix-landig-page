@@ -11,7 +11,7 @@ const Voices = () => {
   return (
     <section
       className="voices"
-      id="faq"
+      id="FAQ"
     >
       <div className="voices_container">
         <Title

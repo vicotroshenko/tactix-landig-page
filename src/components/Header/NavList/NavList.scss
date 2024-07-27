@@ -26,9 +26,10 @@
 
 		&_item>a {
 			@include sizesWH(100%, 100%);
-			@include item_hover($bg-10-hover-color, $bg-1-color);
+			@include item_hover($bg-10-hover-color, $button2-bg-color-green);
 			display: block;
 			padding: 8px 12px;
+			background-color: transparent;
 		}
 	}
 }

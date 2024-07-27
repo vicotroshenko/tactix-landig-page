@@ -41,3 +41,35 @@ $spaces-step: 4;
 		background-position: 0 50%;
 	}
 }
+
+@mixin rotateImage($image) {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	.under_image {
+		position: absolute;
+		inset: 0;
+		background-image: url($image);
+		background-size: contain;
+		transform: rotate(360deg);
+		animation: identifier 40s infinite linear;
+	}
+
+	.over_image {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+	}
+
+	@keyframes identifier {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+}
