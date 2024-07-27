@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/tactix-landig-page/static/css/main.7dc99ba8.css",
-    "main.js": "/tactix-landig-page/static/js/main.97b74b0d.js",
+    "main.css": "/tactix-landig-page/static/css/main.f2d6a421.css",
+    "main.js": "/tactix-landig-page/static/js/main.32cd9baa.js",
     "static/media/Image.jpg": "/tactix-landig-page/static/media/Image.3ac7a68a21b396968ecd.jpg",
-    "static/media/hero-1.svg": "/tactix-landig-page/static/media/hero-1.443cedac89307131c56e8ac8e2416ad6.svg",
-    "static/media/hero-2.svg": "/tactix-landig-page/static/media/hero-2.7f2f5c241e7690a4866525dbeff954d2.svg",
     "static/media/ClashDisplay-Variable.ttf": "/tactix-landig-page/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
+    "static/media/hero-2-2.svg": "/tactix-landig-page/static/media/hero-2-2.24ccc73cb4b8cde17355ccd97142e525.svg",
     "static/media/ClashDisplay-Light.ttf": "/tactix-landig-page/static/media/ClashDisplay-Light.65f6b9963b2bc29f88d0.ttf",
     "static/media/ClashDisplay-Extralight.ttf": "/tactix-landig-page/static/media/ClashDisplay-Extralight.4b744d1b1e49894d8db2.ttf",
     "static/media/ClashDisplay-Medium.ttf": "/tactix-landig-page/static/media/ClashDisplay-Medium.a55835c0e75979b02fcb.ttf",
@@ -19,9 +18,11 @@
     "static/media/Figtree-Bold.ttf": "/tactix-landig-page/static/media/Figtree-Bold.20d002e242f16b5005ac.ttf",
     "static/media/Figtree-Medium.ttf": "/tactix-landig-page/static/media/Figtree-Medium.9f5bdeaa4791672a1407.ttf",
     "static/media/Figtree-Regular.ttf": "/tactix-landig-page/static/media/Figtree-Regular.eb52c4570a34a02898c8.ttf",
+    "static/media/hero-1-1.svg": "/tactix-landig-page/static/media/hero-1-1.d327f30e497e5eaed1f5.svg",
     "static/media/ClashDisplay-Variable.woff2": "/tactix-landig-page/static/media/ClashDisplay-Variable.27b50dcdd5ced9f74da0.woff2",
     "static/media/section_4_1.png": "/tactix-landig-page/static/media/section_4_1.4a6fb38d90ff4d2837c9.png",
     "static/media/facebook_flatline.png": "/tactix-landig-page/static/media/facebook_flatline.e96a5c71c3d17d93c990.png",
+    "static/media/hero-1-2.svg": "/tactix-landig-page/static/media/hero-1-2.4c9c3a87e2d6bd2b1296bf9e4a80a904.svg",
     "static/media/ClashDisplay-Variable.woff": "/tactix-landig-page/static/media/ClashDisplay-Variable.d2735542013ee4bde5ad.woff",
     "static/media/ClashDisplay-Semibold.woff": "/tactix-landig-page/static/media/ClashDisplay-Semibold.52ec5aaabca80f39cd4d.woff",
     "static/media/ClashDisplay-Medium.woff": "/tactix-landig-page/static/media/ClashDisplay-Medium.d059aba57d21630bbeb1.woff",
@@ -41,6 +42,7 @@
     "static/media/ClashDisplay-Bold.woff2": "/tactix-landig-page/static/media/ClashDisplay-Bold.e2f8628a6f360f644a76.woff2",
     "static/media/404_page_not_found_flatline.svg": "/tactix-landig-page/static/media/404_page_not_found_flatline.dc59f3896746cfa87879c6d718b87e08.svg",
     "static/media/ClashDisplay-Extralight.woff2": "/tactix-landig-page/static/media/ClashDisplay-Extralight.8f792be62d02ca420577.woff2",
+    "static/media/hero-2-1.svg": "/tactix-landig-page/static/media/hero-2-1.66d00186212926f54fcd.svg",
     "static/media/Rocket.svg": "/tactix-landig-page/static/media/Rocket.7f4de65cba4c82b3b95900634ee03a44.svg",
     "static/media/digital-3.svg": "/tactix-landig-page/static/media/digital-3.88afa1facbfdf0d2f0e14fb8e37a9fbb.svg",
     "static/media/Shape.svg": "/tactix-landig-page/static/media/Shape.a95c02d0ece4263a48fde823445e3e1b.svg",
@@ -53,11 +55,11 @@
     "static/media/envelop.svg": "/tactix-landig-page/static/media/envelop.60fb2caa7fb256495094ebbff23e7de6.svg",
     "static/media/digital-5.svg": "/tactix-landig-page/static/media/digital-5.812099e52fd7f380ba49a5429daa1b59.svg",
     "static/media/digital-4.svg": "/tactix-landig-page/static/media/digital-4.0bb306ec76420bae8f3a763ca2b9d3d9.svg",
-    "main.7dc99ba8.css.map": "/tactix-landig-page/static/css/main.7dc99ba8.css.map",
-    "main.97b74b0d.js.map": "/tactix-landig-page/static/js/main.97b74b0d.js.map"
+    "main.f2d6a421.css.map": "/tactix-landig-page/static/css/main.f2d6a421.css.map",
+    "main.32cd9baa.js.map": "/tactix-landig-page/static/js/main.32cd9baa.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dc99ba8.css",
-    "static/js/main.97b74b0d.js"
+    "static/css/main.f2d6a421.css",
+    "static/js/main.32cd9baa.js"
   ]
 }
