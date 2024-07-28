@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tactix-landig-page/static/css/main.f2d6a421.css",
-    "main.js": "/tactix-landig-page/static/js/main.32cd9baa.js",
+    "main.css": "/tactix-landig-page/static/css/main.3463268d.css",
+    "main.js": "/tactix-landig-page/static/js/main.8b36ceca.js",
     "static/media/Image.jpg": "/tactix-landig-page/static/media/Image.3ac7a68a21b396968ecd.jpg",
     "static/media/ClashDisplay-Variable.ttf": "/tactix-landig-page/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
     "static/media/hero-2-2.svg": "/tactix-landig-page/static/media/hero-2-2.24ccc73cb4b8cde17355ccd97142e525.svg",
@@ -47,19 +47,23 @@
     "static/media/digital-3.svg": "/tactix-landig-page/static/media/digital-3.88afa1facbfdf0d2f0e14fb8e37a9fbb.svg",
     "static/media/Shape.svg": "/tactix-landig-page/static/media/Shape.a95c02d0ece4263a48fde823445e3e1b.svg",
     "static/media/digital-2.svg": "/tactix-landig-page/static/media/digital-2.984a5f30665e851be8468ce2a64f7dc8.svg",
+    "static/media/licenses-3.svg": "/tactix-landig-page/static/media/licenses-3.c924e1f266be96881d452c7d90f050e2.svg",
+    "static/media/licenses-4.svg": "/tactix-landig-page/static/media/licenses-4.44cb539fd40f9b0fb9b82aaaf0098732.svg",
     "static/media/lamp.svg": "/tactix-landig-page/static/media/lamp.166813f11777195f2c0bb4af89d63280.svg",
     "static/media/Premium.svg": "/tactix-landig-page/static/media/Premium.eef6bfc9de06599f386a918bd55a5c77.svg",
+    "static/media/licenses-2.svg": "/tactix-landig-page/static/media/licenses-2.ebaea9a88104f9793697cfce9d691552.svg",
     "static/media/Calendar.svg": "/tactix-landig-page/static/media/Calendar.eb33677437e44d790942a14ee86e8ee0.svg",
     "static/media/digital-1.svg": "/tactix-landig-page/static/media/digital-1.95b5eeec9af15cd4a92e7331885da03a.svg",
     "index.html": "/tactix-landig-page/index.html",
+    "static/media/licenses-1.svg": "/tactix-landig-page/static/media/licenses-1.749fc6b7d6a028523c85707b2bc5f35c.svg",
     "static/media/envelop.svg": "/tactix-landig-page/static/media/envelop.60fb2caa7fb256495094ebbff23e7de6.svg",
     "static/media/digital-5.svg": "/tactix-landig-page/static/media/digital-5.812099e52fd7f380ba49a5429daa1b59.svg",
     "static/media/digital-4.svg": "/tactix-landig-page/static/media/digital-4.0bb306ec76420bae8f3a763ca2b9d3d9.svg",
-    "main.f2d6a421.css.map": "/tactix-landig-page/static/css/main.f2d6a421.css.map",
-    "main.32cd9baa.js.map": "/tactix-landig-page/static/js/main.32cd9baa.js.map"
+    "main.3463268d.css.map": "/tactix-landig-page/static/css/main.3463268d.css.map",
+    "main.8b36ceca.js.map": "/tactix-landig-page/static/js/main.8b36ceca.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d6a421.css",
-    "static/js/main.32cd9baa.js"
+    "static/css/main.3463268d.css",
+    "static/js/main.8b36ceca.js"
   ]
 }
