@@ -7,13 +7,11 @@ $spaces-step: 4;
     @media only screen and (min-width: $screen-mobile) {
       @content;
     }
-  }
-  @else if $media == tablet {
+  } @else if $media == tablet {
     @media only screen and (min-width: $screen-tablet) {
       @content;
     }
-  }
-  @else if $media == desktop {
+  } @else if $media == desktop {
     @media only screen and (min-width: $screen-desktop) {
       @content;
     }
@@ -21,55 +19,60 @@ $spaces-step: 4;
 }
 
 @mixin sizesWH($width, $height, $max-width: none, $max-height: none) {
-	width: $width;
-	height: $height;
-	max-width: $max-width;
-	max-height: $max-height;
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
 }
 
 @mixin item_hover($hover, $current) {
-	background-image: linear-gradient(45deg, $hover 50%, $current 50%, $current 100%);
-	background-size: 400% 400%;
-	background-position: 100% 50%;
-	transition: all 0.30s linear;
+  background-image: linear-gradient(
+    45deg,
+    $hover 50%,
+    $current 50%,
+    $current 100%
+  );
+  background-size: 400% 400%;
+  background-position: 100% 50%;
+  transition: all 0.3s linear;
 
-	&:hover {
-		background-position: 0 50%;
-	}
+  &:hover {
+    background-position: 0 50%;
+  }
 
-	&:focus {
-		background-position: 0 50%;
-	}
+  &:focus {
+    background-position: 0 50%;
+  }
 }
 
 @mixin rotateImage($image) {
-	position: relative;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
-	.under_image {
-		position: absolute;
-		inset: 0;
-		background-image: url($image);
-		background-size: contain;
-		transform: rotate(360deg);
-		animation: identifier 40s infinite linear;
-	}
+  .under_image {
+    position: absolute;
+    inset: 0;
+    background-image: url($image);
+    background-size: contain;
+    transform: rotate(360deg);
+    animation: identifier 40s infinite linear;
+  }
 
-	.over_image {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		z-index: 5;
-	}
+  .over_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
 
-	@keyframes identifier {
-	0% {
-		transform: rotate(0);
-	}
+  @keyframes identifier {
+    0% {
+      transform: rotate(0);
+    }
 
-	100% {
-		transform: rotate(360deg);
-	}
-}
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }

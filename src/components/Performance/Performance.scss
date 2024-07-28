@@ -3,40 +3,39 @@
 @import '../../styles/placeholders.scss';
 
 .performance {
-	width: 100%;
-	color: $bg-2-color;
-	background-color: $bg-1-color;
+  width: 100%;
+  color: $bg-2-color;
+  background-color: $bg-1-color;
 
-	&_container {
-		@extend %section_container;
-	}
+  &_container {
+    @extend %section_container;
+  }
 
-	&_list {
-		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-content: center;
-		justify-items: center;
-		gap: 12px;
-		list-style-type: none;
+  &_list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 12px;
+    list-style-type: none;
 
-		@include responsive(tablet) {
-			grid-template-columns: repeat(2, minmax(360px, 464px));
-			gap: 16px;
-		}
+    @include responsive(tablet) {
+      grid-template-columns: repeat(2, minmax(360px, 464px));
+      gap: 16px;
+    }
 
-		&>li:last-child {
-			background-color: $bg-10-color;
-			@include responsive(tablet) {
-				grid-column: -3 / -1;
-			}
+    & > li:last-child {
+      background-color: $bg-10-color;
+      @include responsive(tablet) {
+        grid-column: -3 / -1;
+      }
 
-			@include responsive(desktop) {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-		}
-	}
-
+      @include responsive(desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
 }

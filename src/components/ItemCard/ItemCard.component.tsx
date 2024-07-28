@@ -2,11 +2,8 @@ import classNames from 'classnames';
 import { nanoid } from 'nanoid';
 import React from 'react';
 
-
-
 import { CardData } from '../../types/card.type';
 import './ItemCard.scss';
-
 
 interface InnovationCardProps {
   data: CardData;

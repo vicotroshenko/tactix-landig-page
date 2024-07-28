@@ -10,3 +10,4 @@ export { default as ContactUs } from './ContactUs/ContactUs.component';
 export { default as Footer } from './Footer/Footer.component';
 export { default as Layout } from './Layout/Layout.component';
 export { default as NotFoundView } from './NotFoundView/NotFoundView.component';
+export { default as LicensesContent } from './LicensesContent/LicensesContent.component';

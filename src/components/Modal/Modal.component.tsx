@@ -2,11 +2,8 @@ import classNames from 'classnames';
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
-
-
 import { useKeyDown } from '../../hooks/useKeyDown';
 import './Modal.scss';
-
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -14,22 +11,27 @@ interface ModalProps {
   children: React.ReactNode;
   toggle: () => void;
   visible: boolean;
+  bodyScroll?: boolean;
 }
 
-const Modal: React.FC<ModalProps> = ({ children, toggle, visible }) => {
+const Modal: React.FC<ModalProps> = ({
+  children,
+  toggle,
+  visible,
+  bodyScroll = false,
+}) => {
   useKeyDown({
     fn: toggle,
-    keyName: 'Escape'
-  })
+    keyName: 'Escape',
+  });
 
   useEffect(() => {
-    if(visible){
-      document.body.style.overflow = 'hidden';
+    if (visible && bodyScroll) {
+      document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflow = 'scroll';
+      document.body.style.overflowY = 'scroll';
     }
-  }, [visible]);
-  
+  }, [visible, bodyScroll]);
 
   const handleBackdropClick = (event: React.MouseEvent) => {
     if (event.currentTarget === event.target) {

@@ -9,14 +9,17 @@ import data from './data';
 const title = 'Our Strategic Framework for Excellence';
 const StrategicFramework = () => {
   return (
-    <section className="strategy" id="approach">
+    <section
+      className="strategy"
+      id="approach"
+    >
       <div className="strategy_container">
         <Title
           title={title}
           amount={3}
-          color='BLUE'
+          color="BLUE"
         />
-        <ul className='strategy_list'>
+        <ul className="strategy_list">
           {data.map((item) => (
             <ItemCard
               data={item}

@@ -3,64 +3,54 @@
 @import '../../styles/placeholders.scss';
 
 .inn_title {
-	max-width: 297px;
-	margin: 0 auto;
-	margin-bottom: 68px;
+  max-width: 297px;
+  margin: 0 auto;
+  margin-bottom: 68px;
 
-	@include responsive(tablet) {
-		max-width: 520px;
-		margin-bottom: 96px;
-	}
+  @include responsive(tablet) {
+    max-width: 520px;
+    margin-bottom: 96px;
+  }
 
-	@include responsive(desktop) {
-		max-width: 640px;
-		margin-bottom: 120px;
-	}
+  @include responsive(desktop) {
+    max-width: 640px;
+    margin-bottom: 120px;
+  }
 
-	&>h2 {
-		font-size: $text-size-large;
-		line-height: $line-height-small;
-		letter-spacing: -0.016em;
+  & > h2 {
+    @extend %title;
 
-		@include responsive(tablet) {
-			font-size: $text-size-large-xxl;
-		}
+    & > .first_green {
+      color: $text-color-secondary-1;
+    }
 
-		@include responsive(desktop) {
-			font-size: $text-size-large-h1-l;
-		}
+    & > .first_yellow {
+      color: $text-color-secondary-2;
+    }
 
-		&>.first_green {
-			color: $text-color-secondary-1;
-		}
+    & > .first_blue {
+      color: $text-color-secondary-3;
+    }
 
-		&>.first_yellow {
-			color: $text-color-secondary-2;
-		}
+    & > .first_grey {
+      color: $text-color-secondary-4;
+    }
 
-		&>.first_blue {
-			color: $text-color-secondary-3;
-		}
+    & > .first_white {
+      color: $text-color-light;
+    }
+  }
 
-		&>.first_grey {
-			color: $text-color-secondary-4;
-		}
+  & > p {
+    font-size: $text-size-small;
+    line-height: $line-height-regular;
+    letter-spacing: -0.005em;
+    max-width: 297px;
+    padding-top: 16px;
 
-		&>.first_white {
-			color: $text-color-light;
-		}
-	}
-
-	&>p {
-		font-size: $text-size-small;
-		line-height: $line-height-regular;
-		letter-spacing: -0.005em;
-		max-width: 297px;
-		padding-top: 16px;
-
-		@include responsive(tablet) {
-			max-width: 360px;
-			padding-top: 20px;
-		}
-	}
+    @include responsive(tablet) {
+      max-width: 360px;
+      padding-top: 20px;
+    }
+  }
 }

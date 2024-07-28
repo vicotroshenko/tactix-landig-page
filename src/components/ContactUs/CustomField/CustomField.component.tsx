@@ -19,7 +19,6 @@ const CustomField: React.FC<CustomFieldProps> = ({
   touched,
   ...props
 }) => {
-  
   return (
     <>
       <div className="custom_field">

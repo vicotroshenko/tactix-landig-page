@@ -1,17 +1,14 @@
 import classNames from 'classnames';
 import React from 'react';
 
-
-
 import './Title.scss';
-
 
 enum ColorKey {
   GREEN = 'green',
   YELLOW = 'yellow',
   BLUE = 'blue',
   GREY = 'grey',
-  WHITE = 'white'
+  WHITE = 'white',
 }
 
 interface TitleProps {

@@ -10,14 +10,14 @@ interface OurServicesProps {
 
 const OurServices: React.FC<OurServicesProps> = ({ icon, text1, text2 }) => {
   return (
-    <li className='our_serv_card'>
-      <div className='our_serv_card_icon'>
+    <li className="our_serv_card">
+      <div className="our_serv_card_icon">
         <img
           src={icon}
           alt="icon of service"
         />
       </div>
-      <div className='our_serv_card_text'>
+      <div className="our_serv_card_text">
         <p>{text1}</p>
         <p>{text2}</p>
       </div>

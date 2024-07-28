@@ -32,7 +32,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ toggle }) => {
             <li key={nanoid()}>
               <PrimaryLink
                 outline="black"
-                link={item}
+                link={`#${item}`}
                 onClick={toggle}
                 size="large"
               >

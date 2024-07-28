@@ -3,6 +3,5 @@
 @import '../../../styles/placeholders.scss';
 
 .hero_image_cover {
-	@include rotateImage('../assets/images/svg/hero-1-1.svg');
+  @include rotateImage('../assets/images/svg/hero-1-1.svg');
 }
-

@@ -3,40 +3,40 @@
 @import '../../styles/placeholders.scss';
 
 .voices {
-	width: 100%;
-	height: 100%;
-	background-color: $bg-1-color;
-	color: $text-color-light;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-1-color;
+  color: $text-color-light;
 
-	&_container {
-		height: 100%;
-		@extend %section_container;
-	}
+  &_container {
+    height: 100%;
+    @extend %section_container;
+  }
 
-	&_list {
-		height: 100%;
-		width: fit-content;
-		max-width: 944px;
-		margin: 0 auto;
-		list-style-type: none;
-		column-count: 1;
+  &_list {
+    height: 100%;
+    width: fit-content;
+    max-width: 944px;
+    margin: 0 auto;
+    list-style-type: none;
+    column-count: 1;
 
-		@include responsive(tablet) {
-			column-count: 2;
-			column-gap: 16px;
-		}
+    @include responsive(tablet) {
+      column-count: 2;
+      column-gap: 16px;
+    }
 
-		&>li {
-			max-width: 361px;
-			margin-bottom: 16px;
+    & > li {
+      max-width: 361px;
+      margin-bottom: 16px;
 
-			@include responsive(desktop) {
-				max-width: 464px;
-			}
-		}
+      @include responsive(desktop) {
+        max-width: 464px;
+      }
+    }
 
-		@include responsive(tablet) {
-			gap: 16px;
-		}
-	}
+    @include responsive(tablet) {
+      gap: 16px;
+    }
+  }
 }

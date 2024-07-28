@@ -3,46 +3,45 @@
 @import '../../../styles/placeholders.scss';
 
 .mobile_menu {
-	position: absolute;
-	width: 100%;
-	height: 100svh;
-	z-index: 16;
-	background-color: $bg-1-color;
-	padding: 24px 24px 32px 24px;
-	color: $text-color-light;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 16;
+  background-color: $bg-1-color;
+  padding: 24px 24px 32px 24px;
+  color: $text-color-light;
+  @include responsive(desktop) {
+    display: none;
+    padding: 24px 48px 40px 48px;
+  }
 
-	@include responsive(desktop) {
-		display: none;
-		padding: 24px 48px 40px 48px;
-	}
+  &_header {
+    @extend %items-center-between;
+  }
 
-	&_header {
-		@extend %items-center-between;
-	}
+  &_footer {
+    @extend %items-center-start;
+    margin: auto auto 0 0;
+  }
 
-	&_footer {
-		@extend %items-center-start;
-		margin: auto auto 0 0;
-	}
+  &_nav {
+    width: 100%;
+    height: calc(100% - 88px);
+    overflow-y: auto;
+    & > ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      max-width: 345px;
+      gap: 8px;
+      padding-top: 64px;
 
-	&_nav {
-		width: 100%;
-		height: calc(100% - 88px);
-
-		&>ul {
-			list-style-type: none;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: stretch;
-			max-width: 345px;
-			gap: 8px;
-			padding-top: 64px;
-
-			@include responsive(tablet) {
-				gap: 16px;
-				max-width: 648px;
-				padding-top: 104px;
-			}
-		}
-	}
+      @include responsive(tablet) {
+        gap: 16px;
+        max-width: 648px;
+        padding-top: 104px;
+      }
+    }
+  }
 }
