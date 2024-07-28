@@ -1,4 +1,3 @@
-
 const media = [
   {
     icon: require('../../assets/images/png/LinkedIn.png'),

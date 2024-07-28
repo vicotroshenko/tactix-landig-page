@@ -16,9 +16,11 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
 
   const handleButtonClick = () => setActive((prev) => !prev);
   return (
-    <li className={classNames('accordion', {
-          'accordion_hidden': !active,
-        })}>
+    <li
+      className={classNames('accordion', {
+        accordion_hidden: !active,
+      })}
+    >
       <button
         type="button"
         onClick={handleButtonClick}
@@ -32,11 +34,7 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
           <FaPlus />
         </div>
       </button>
-      <div
-        className="accordion_text"
-      >
-        {item.text}
-      </div>
+      <div className="accordion_text">{item.text}</div>
     </li>
   );
 };

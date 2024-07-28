@@ -1,6 +1,7 @@
 import React from 'react';
-import './Hero2.scss'
+
 import { ReactComponent as HeroImage1 } from '../../../assets/images/svg/hero-2-2.svg';
+import './Hero2.scss';
 
 const Hero2 = () => {
   return (

@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './PrimaryLink.scss';
 
@@ -16,7 +17,10 @@ enum LinkSize {
 }
 
 interface PrimaryLinkProps
-  extends Omit<React.HTMLAttributes<HTMLAnchorElement>, 'className' | 'href'> {
+  extends Omit<
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    'className' | 'href'
+  > {
   children: React.ReactNode;
   outline: keyof typeof LinkStyle;
   link: string;
@@ -30,15 +34,28 @@ const PrimaryLink: React.FC<PrimaryLinkProps> = ({
   size,
   ...props
 }) => {
-  return (
-    <a
-      href={`#${link}`}
-      {...props}
-      className={classNames(LinkStyle[outline], LinkSize[size])}
-    >
-      {children}
-    </a>
-  );
+  const isAnchor = link.slice(0, 1) === '#';
+  if (isAnchor) {
+    return (
+      <a
+        href={link}
+        {...props}
+        className={classNames(LinkStyle[outline], LinkSize[size])}
+      >
+        {children}
+      </a>
+    );
+  } else {
+    return (
+      <Link
+        to={link}
+        {...props}
+        className={classNames(LinkStyle[outline], LinkSize[size])}
+      >
+        {children}
+      </Link>
+    );
+  }
 };
 
 export default PrimaryLink;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
+import RouteKey from '../../constants/routes.constant';
 import PrimaryLink from '../PrimaryLink/PrimaryLink.component';
 import { Hero1, Hero2 } from '../SVG';
 import './Hero.scss';
@@ -15,7 +16,7 @@ const Hero = () => {
         <PrimaryLink
           outline="light_green"
           style={{ margin: '0 auto 32px auto' }}
-          link="faq"
+          link="#FAQ"
           size="small"
         >
           What Our Clients Say
@@ -42,7 +43,7 @@ const Hero = () => {
               Schedule Consultation
             </PrimaryLink>
             <PrimaryLink
-              link="service"
+              link={RouteKey.LICENSES}
               outline="black"
               size="medium"
             >

@@ -12,13 +12,16 @@ const text =
 
 const Innovation = () => {
   return (
-    <section className="inn" id="about">
+    <section
+      className="inn"
+      id="about"
+    >
       <div className="inn_container">
         <Title
           title={title}
           underTitle={text}
           amount={3}
-          color='GREEN'
+          color="GREEN"
         />
         <ul className="inn_list">
           {data.map((item) => (

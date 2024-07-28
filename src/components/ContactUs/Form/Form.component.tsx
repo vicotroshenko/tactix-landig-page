@@ -7,7 +7,10 @@ import './Form.scss';
 import initialValues, { InitialKey } from './initialValues';
 import validationSchema from './validation';
 
-const Form = () => {
+interface FormProps {
+  toggleModal?: () => void;
+}
+const Form: React.FC<FormProps> = ({ toggleModal }) => {
   const formik = useFormik({
     initialValues,
     validationSchema,
@@ -16,8 +19,9 @@ const Form = () => {
 
   function handleFormSubmit(values: typeof initialValues) {
     console.log('values: ', values);
+    toggleModal?.();
   }
-  // console.log(formik);
+
   return (
     <form
       className="contact_us_form"

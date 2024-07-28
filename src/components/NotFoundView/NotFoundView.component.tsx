@@ -17,7 +17,7 @@ const NotFoundView = () => {
             outline="green"
             style={{ height: 62, width: 178 }}
             link="/"
-            size='medium'
+            size="medium"
           >
             Back to Home
           </PrimaryLink>

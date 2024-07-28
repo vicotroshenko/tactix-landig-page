@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import { CardData } from '../../../types/card.type';
@@ -5,18 +6,22 @@ import './DigitalServiceCard.scss';
 
 interface DigitalServiceCardProps {
   data: CardData;
+  darkTheme?: boolean;
 }
-const DigitalServiceCard: React.FC<DigitalServiceCardProps> = ({ data }) => {
+const DigitalServiceCard: React.FC<DigitalServiceCardProps> = ({
+  data,
+  darkTheme = false,
+}) => {
   return (
-    <li className="dig_card">
-      <div className="dig_card_icon">
+    <li className={classNames('digi_card', { digi_card_dark: darkTheme })}>
+      <div className="digi_card_icon">
         <img
           src={data.icon}
           alt="card icon"
         />
       </div>
       <h3>{data.title}</h3>
-      <p className='dig_card_text'>{data.text}</p>
+      <p className="digi_card_text">{data.text}</p>
     </li>
   );
 };

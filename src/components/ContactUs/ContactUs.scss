@@ -3,65 +3,65 @@
 @import '../../styles/placeholders.scss';
 
 .contact_us {
-	width: 100%;
-	color: $text-color-secondary-4;
+  width: 100%;
+  color: $text-color-secondary-4;
 
-	&_container {
-		@extend %section_container;
-	}
+  &_container {
+    @extend %section_container;
+  }
 
-	&_form_wrapper {
-		@extend %items-center;
-		flex-direction: column;
-		gap: 16px;
+  &_form_wrapper {
+    @extend %items-center;
+    flex-direction: column;
+    gap: 16px;
 
-		@include responsive(desktop) {
-			flex-direction: row;
-			max-height: 549px;
-		}
-	}
+    @include responsive(desktop) {
+      flex-direction: row;
+      max-height: 549px;
+    }
+  }
 
-	&_image {
-		width: 100%;
-		height: 100%;
-		max-width: 738px;
-		overflow: hidden;
-		border-radius: 28px;
+  &_image {
+    width: 100%;
+    height: 100%;
+    max-width: 738px;
+    overflow: hidden;
+    border-radius: 28px;
 
-		@include responsive(tablet) {
-			border-radius: 40px;
-			max-height: 680px;
-		}
+    @include responsive(tablet) {
+      border-radius: 40px;
+      max-height: 680px;
+    }
 
-		@include responsive(desktop) {
-			max-width: 464px;
-			max-height: 549px;
-		}
+    @include responsive(desktop) {
+      max-width: 464px;
+      max-height: 549px;
+    }
 
-		&>img {
-			display: flex;
-			height: 100%;
-			object-fit: contain;
-		}
-	}
+    & > img {
+      display: flex;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 
-	&_list {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		list-style-type: none;
-		gap: 12px;
-		margin: 0 auto 40px auto;
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    gap: 12px;
+    margin: 0 auto 40px auto;
 
-		@include responsive(tablet) {
-			flex-direction: row;
-			gap: 16px;
-			max-width: 738px;
-			margin-bottom: 16px;
-		}
+    @include responsive(tablet) {
+      flex-direction: row;
+      gap: 16px;
+      max-width: 738px;
+      margin-bottom: 16px;
+    }
 
-		@include responsive(desktop) {
-			max-width: 944px;
-		}
-	}
+    @include responsive(desktop) {
+      max-width: 944px;
+    }
+  }
 }

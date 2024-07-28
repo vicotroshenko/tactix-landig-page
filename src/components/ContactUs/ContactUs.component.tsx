@@ -1,7 +1,9 @@
 import { nanoid } from 'nanoid';
-import React from 'react';
+import React, { useState } from 'react';
 
 import formImage from '../../assets/images/jpg/Image.jpg';
+import Modal from '../Modal/Modal.component';
+import SuccessMessage from '../Modal/SuccessMessage/SuccessMessage.component';
 import Title from '../Title/Title.component';
 import './ContactUs.scss';
 import Form from './Form/Form.component';
@@ -10,13 +12,25 @@ import data from './data';
 
 const title = 'Contact Us to Start Your Transformation';
 const ContactUs = () => {
+  const [visible, setVisible] = useState(false);
+  const toggleSuccessModal = () => setVisible((prev) => !prev);
+
   return (
-    <section className="contact_us" id='contact us'>
+    <section
+      className="contact_us"
+      id="contact us"
+    >
+      <Modal
+        visible={visible}
+        toggle={toggleSuccessModal}
+      >
+        <SuccessMessage />
+      </Modal>
       <div className="contact_us_container">
         <Title
           title={title}
           amount={2}
-          color='WHITE'
+          color="WHITE"
         />
         <ul className="contact_us_list">
           {data.map(({ icon, text1, text2 }) => (
@@ -29,7 +43,7 @@ const ContactUs = () => {
           ))}
         </ul>
         <div className="contact_us_form_wrapper">
-          <Form />
+          <Form toggleModal={toggleSuccessModal} />
           <div className="contact_us_image">
             <img
               src={formImage}

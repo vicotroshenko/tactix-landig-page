@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/placeholders.scss';
+
+.success_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %items-center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 352px;
+  padding: 40px 24px 40px 24px;
+  border-radius: 32px;
+  background-color: $bg-7-color;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  & h2 {
+    max-width: 262px;
+    font-size: $text-size-large;
+    line-height: $line-height-small;
+    margin-bottom: 8px;
+
+    & + p {
+      font-size: $text-size-small-l;
+      line-height: $line-height-regular;
+      color: $text-color-secondary-5;
+    }
+  }
+
+  &_icon {
+    @extend %items-center;
+    @include sizesWH(56px, 56px);
+    border-radius: 50%;
+    background-color: $button-bg-color-green;
+    margin-bottom: 32px;
+
+    & > svg {
+      width: 100%;
+      @include sizesWH(24px, 24px);
+    }
+  }
+}

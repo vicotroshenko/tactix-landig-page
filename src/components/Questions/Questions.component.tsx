@@ -14,7 +14,7 @@ const Questions = () => {
         <Title
           title={title}
           amount={2}
-          color='GREY'
+          color="GREY"
         />
         <ul className="questions_list">
           {data.map((item) => (

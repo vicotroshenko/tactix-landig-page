@@ -3,50 +3,50 @@
 @import '../../styles/placeholders.scss';
 
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: $bg-11-header-color;
-	z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $bg-11-header-color;
+  z-index: 99;
 
-	&_container {
-		@extend %items-center-between;
-		@include sizesWH(100%, 68px);
-		@extend %container;
+  &_container {
+    @extend %items-center-between;
+    @include sizesWH(100%, 68px);
+    @extend %container;
 
-		padding: 24px 24px 0 24px;
-		color: $text-color-light;
+    padding: 24px 24px 0 24px;
+    color: $text-color-light;
 
-		@include responsive(tablet) {
-			padding: 24px 48px 0 48px;
-		}
+    @include responsive(tablet) {
+      padding: 24px 48px 0 48px;
+    }
 
-		@include responsive(desktop) {
-			padding: 24px 96px 0 96px;
-		}
-	}
+    @include responsive(desktop) {
+      padding: 24px 96px 0 96px;
+    }
+  }
 }
 
 .header_buttons {
-	@extend %items-center-end;
-	gap: 16px;
-	width: auto;
+  @extend %items-center-end;
+  gap: 16px;
+  width: auto;
 
-	&_contact {
-		display: none;
-		@include sizesWH(115px, 44px);
+  &_contact {
+    display: none;
+    @include sizesWH(115px, 44px);
 
-		@include responsive(mobile) {
-			display: block;
-		}
-	}
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
 
-	&_burger {
-		@include sizesWH(44px, 44px);
+  &_burger {
+    @include sizesWH(44px, 44px);
 
-		@include responsive(desktop) {
-			display: none;
-		}
-	}
+    @include responsive(desktop) {
+      display: none;
+    }
+  }
 }

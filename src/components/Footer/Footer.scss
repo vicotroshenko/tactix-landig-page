@@ -3,36 +3,37 @@
 @import '../../styles/placeholders.scss';
 
 .footer {
-	width: 100%;
-	color: $text-color-light;
+  width: 100%;
+  color: $text-color-light;
 
-	&_container {
-		@extend %container;
-		padding: 56px 24px;
+  &_container {
+    @extend %container;
+    padding: 56px 24px;
 
-		@include responsive(tablet) {
-			padding: 80px 48px 64px 48px;
-		}
+    @include responsive(tablet) {
+      padding: 80px 48px 64px 48px;
+    }
 
-		@include responsive(desktop) {
-			padding: 104px 248px 64px 248px;
-		}
-	}
+    @include responsive(desktop) {
+      padding: 104px 248px 64px 248px;
+    }
+  }
 
-	&_top {
-		@extend %items-center-between;
-		padding-bottom: 16px;
-		border-bottom: 1px solid $button2-bg-color-green;
-	}
+  &_top {
+    @extend %items-center-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $button2-bg-color-green;
+  }
 
-	&_bottom {
-		@extend %items-center-between;
-		padding-top: 24px;
-		font-size: $text-size-small;
-		line-height: $line-height-regular;
-		color: $text-color-secondary-4;
-		letter-spacing: -0.005em;
+  &_bottom {
+    @extend %items-center-between;
+    padding-top: 24px;
+    font-size: $text-size-small;
+    line-height: $line-height-regular;
+    color: $text-color-secondary-4;
+    letter-spacing: -0.005em;
 
-		@include responsive(tablet) {}
-	}
+    @include responsive(tablet) {
+    }
+  }
 }
