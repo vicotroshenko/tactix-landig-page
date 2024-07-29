@@ -7,6 +7,9 @@
   border-radius: 28px;
   background-color: $bg-10-color;
   color: $text-color-light;
+  @include responsive(tablet){
+    padding: 48px 40px;
+  }
   &_container {
     @extend %items-center-start;
     gap: 16px;

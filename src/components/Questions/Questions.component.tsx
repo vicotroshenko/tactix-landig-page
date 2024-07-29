@@ -7,6 +7,7 @@ import './Questions.scss';
 import data from './data';
 
 const title = 'Your Burning Questions Answered';
+
 const Questions = () => {
   return (
     <section className="questions">

@@ -3,7 +3,6 @@
 @import '../../../styles/placeholders.scss';
 
 .accordion {
-  max-height: 100%;
   background-color: $bg-10-color;
   border-radius: 16px;
   padding: 20px 24px;
@@ -12,19 +11,18 @@
   color: $bg-2-color;
   overflow: hidden;
 
-  &.accordion_hidden {
-    & .accordion_text {
-      max-height: 0;
-      transition: max-height 1s linear;
-    }
-  }
   @include responsive(tablet) {
     border-radius: 24px;
+    padding: 28px 40px;
+  }
+    @include responsive(desktop) {
+    padding: 37px 40px;
   }
 
-  & button {
+  & h2 {
     @extend %items-center-between;
     width: 100%;
+    margin-bottom: 16px;
     font-size: $text-size-regular;
     line-height: $line-height-regular;
     font-weight: 600;
@@ -32,7 +30,7 @@
     text-align: left;
     cursor: pointer;
 
-    & > p {
+    &>p {
       max-width: 213px;
 
       @include responsive(tablet) {
@@ -45,13 +43,13 @@
     }
   }
 
-  &_button_icon {
+  &_title_icon {
     @include sizesWH(44px, 44px);
     @extend %items-center;
     border-radius: 50%;
     background-color: $button-bg-color-green;
 
-    & > svg {
+    &>svg {
       @include sizesWH(12px, 12px);
       fill: $bg-1-color;
       transition: transform 0.2s linear;
@@ -59,15 +57,24 @@
   }
 
   &_button_icon_active {
-    & > svg {
+    &>svg {
       transform: rotate(45deg);
     }
   }
 
   &_text {
-    max-height: 100%;
-    overflow: hidden;
     color: $text-color-secondary-4;
-    transition: max-height 1s linear;
+    display: grid;
+    grid-template-rows: 0fr;
+    pointer-events: none;
+    transition: grid-template-rows 0.3s linear;
+
+    &.accordion_text_active {
+      grid-template-rows: 1fr;
+    }
+
+    &>div {
+      overflow: hidden;
+    }
   }
 }
