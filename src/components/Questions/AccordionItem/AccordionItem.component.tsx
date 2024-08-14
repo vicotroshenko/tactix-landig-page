@@ -22,7 +22,9 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
     >
       <h2>
         <p>{item.title}</p>
-        <div className="accordion_title_icon">
+        <div className={classNames("accordion_title_icon", {
+          'title_icon_active': active
+        })}>
           <FaPlus />
         </div>
       </h2>
@@ -30,6 +32,7 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
         className={classNames('accordion_text', {
           accordion_text_active: active,
         })}
+        data-testid="accordion_text"
       >
         <div>{item.text}</div>
       </div>

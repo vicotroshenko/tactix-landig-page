@@ -30,7 +30,12 @@ const CustomField: React.FC<CustomFieldProps> = ({
         <label htmlFor={name}>{label}</label>
       </div>
       {errors?.[name] && touched?.[name] && (
-        <p className="error">{errors?.[name]}</p>
+        <p
+          className="error"
+          data-testid={name}
+        >
+          {errors?.[name]}
+        </p>
       )}
     </>
   );

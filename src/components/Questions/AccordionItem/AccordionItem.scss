@@ -15,14 +15,14 @@
     border-radius: 24px;
     padding: 28px 40px;
   }
-    @include responsive(desktop) {
+
+  @include responsive(desktop) {
     padding: 37px 40px;
   }
 
   & h2 {
     @extend %items-center-between;
     width: 100%;
-    margin-bottom: 16px;
     font-size: $text-size-regular;
     line-height: $line-height-regular;
     font-weight: 600;
@@ -54,11 +54,11 @@
       fill: $bg-1-color;
       transition: transform 0.2s linear;
     }
-  }
 
-  &_button_icon_active {
-    &>svg {
-      transform: rotate(45deg);
+    &.title_icon_active {
+      &>svg {
+        transform: rotate(45deg);
+      }
     }
   }
 
@@ -70,6 +70,7 @@
     transition: grid-template-rows 0.3s linear;
 
     &.accordion_text_active {
+      padding-top: 16px;
       grid-template-rows: 1fr;
     }
 

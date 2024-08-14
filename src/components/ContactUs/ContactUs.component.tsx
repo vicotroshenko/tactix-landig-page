@@ -7,6 +7,7 @@ import SuccessMessage from '../Modal/SuccessMessage/SuccessMessage.component';
 import Title from '../Title/Title.component';
 import './ContactUs.scss';
 import Form from './Form/Form.component';
+import initialValues from './Form/initialValues';
 import OurServices from './OurServices/OurServices.component';
 import data from './data';
 
@@ -14,6 +15,12 @@ const title = 'Contact Us to Start Your Transformation';
 const ContactUs = () => {
   const [visible, setVisible] = useState(false);
   const toggleSuccessModal = () => setVisible((prev) => !prev);
+
+  const handleSubmitForm = (values: typeof initialValues) => {
+    console.log('values', values);
+
+    toggleSuccessModal();
+  };
 
   return (
     <section
@@ -43,7 +50,7 @@ const ContactUs = () => {
           ))}
         </ul>
         <div className="contact_us_form_wrapper">
-          <Form toggleModal={toggleSuccessModal} />
+          <Form onSubmit={handleSubmitForm} />
           <div className="contact_us_image">
             <img
               src={formImage}

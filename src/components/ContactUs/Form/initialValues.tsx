@@ -1,11 +1,11 @@
 export enum InitialKey {
-  FULL_NAME = 'full_name',
+  FULL_NAME = 'fullName',
   EMAIL = 'email',
   MESSAGE = 'message',
 }
 
 const initialValues: Record<InitialKey, string> = {
-  full_name: '',
+  fullName: '',
   email: '',
   message: '',
 };

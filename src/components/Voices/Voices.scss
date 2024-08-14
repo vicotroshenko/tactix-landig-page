@@ -31,24 +31,24 @@
       gap: 16px;
 
       &::after {
-        content: " ";
+        content: ' ';
         flex-basis: 100%;
         width: 0;
         order: 2;
       }
 
       &::before {
-        content: " ";
+        content: ' ';
         flex-basis: 100%;
         width: 0;
         order: 2;
       }
     }
-    @include responsive(desktop){
+    @include responsive(desktop) {
       height: 1174px;
     }
 
-    &>li {
+    & > li {
       width: 100%;
       max-width: 361px;
 
@@ -56,6 +56,5 @@
         max-width: 464px;
       }
     }
-
   }
 }

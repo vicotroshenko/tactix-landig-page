@@ -8,19 +8,17 @@ import initialValues, { InitialKey } from './initialValues';
 import validationSchema from './validation';
 
 interface FormProps {
-  toggleModal?: () => void;
+  onSubmit: (values: typeof initialValues) => void;
 }
-const Form: React.FC<FormProps> = ({ toggleModal }) => {
+const Form: React.FC<FormProps> = ({ onSubmit }) => {
   const formik = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: handleFormSubmit,
+    onSubmit: (values, { resetForm }) => {
+      onSubmit(values);
+      resetForm();
+    },
   });
-
-  function handleFormSubmit(values: typeof initialValues) {
-    console.log('values: ', values);
-    toggleModal?.();
-  }
 
   return (
     <form
@@ -38,7 +36,7 @@ const Form: React.FC<FormProps> = ({ toggleModal }) => {
           name={InitialKey.FULL_NAME}
           placeholder=" "
           label="full name"
-          value={formik.values.full_name}
+          value={formik.values.fullName}
           onChange={formik.handleChange}
           errors={formik.errors}
           touched={formik.touched}
@@ -55,7 +53,7 @@ const Form: React.FC<FormProps> = ({ toggleModal }) => {
         />
         <CustomField
           type="text"
-          name={InitialKey.MESSAGE}
+          name="message"
           placeholder="How can we help you?"
           value={formik.values.message}
           onChange={formik.handleChange}
