@@ -30,6 +30,7 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
         className={classNames('accordion_text', {
           accordion_text_active: active,
         })}
+        data-testid="accordion_text"
       >
         <div>{item.text}</div>
       </div>

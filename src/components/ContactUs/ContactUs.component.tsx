@@ -1,18 +1,15 @@
 import { nanoid } from 'nanoid';
 import React, { useState } from 'react';
 
-
-
 import formImage from '../../assets/images/jpg/Image.jpg';
 import Modal from '../Modal/Modal.component';
 import SuccessMessage from '../Modal/SuccessMessage/SuccessMessage.component';
 import Title from '../Title/Title.component';
 import './ContactUs.scss';
 import Form from './Form/Form.component';
+import initialValues from './Form/initialValues';
 import OurServices from './OurServices/OurServices.component';
 import data from './data';
-import initialValues from './Form/initialValues';
-
 
 const title = 'Contact Us to Start Your Transformation';
 const ContactUs = () => {
