@@ -30,7 +30,7 @@
     text-align: left;
     cursor: pointer;
 
-    &>p {
+    & > p {
       max-width: 213px;
 
       @include responsive(tablet) {
@@ -49,14 +49,14 @@
     border-radius: 50%;
     background-color: $button-bg-color-green;
 
-    &>svg {
+    & > svg {
       @include sizesWH(12px, 12px);
       fill: $bg-1-color;
       transition: transform 0.2s linear;
     }
 
     &.title_icon_active {
-      &>svg {
+      & > svg {
         transform: rotate(45deg);
       }
     }
@@ -74,7 +74,7 @@
       grid-template-rows: 1fr;
     }
 
-    &>div {
+    & > div {
       overflow: hidden;
     }
   }

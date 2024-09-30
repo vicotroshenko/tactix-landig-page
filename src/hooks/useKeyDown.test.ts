@@ -1,10 +1,7 @@
 import { renderHook } from '@testing-library/react';
 import user from '@testing-library/user-event';
 
-
-
 import { useKeyDown } from './useKeyDown';
-
 
 const EscapeKey = 'Escape';
 

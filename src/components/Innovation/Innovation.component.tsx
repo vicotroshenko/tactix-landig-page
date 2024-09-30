@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 import React from 'react';
 
+import AnimatedContainer from '../AnimatedContainer/AnimatedContainer.component';
 import InnovationCard from '../ItemCard/ItemCard.component';
 import Title from '../Title/Title.component';
 import './Innovation.scss';
@@ -16,22 +17,24 @@ const Innovation = () => {
       className="inn"
       id="about"
     >
-      <div className="inn_container">
-        <Title
-          title={title}
-          underTitle={text}
-          amount={3}
-          color="GREEN"
-        />
-        <ul className="inn_list">
-          {data.map((item) => (
-            <InnovationCard
-              data={item}
-              key={nanoid()}
-            />
-          ))}
-        </ul>
-      </div>
+      <AnimatedContainer>
+        <div className="inn_container">
+          <Title
+            title={title}
+            underTitle={text}
+            amount={3}
+            color="GREEN"
+          />
+          <ul className="inn_list">
+            {data.map((item) => (
+              <InnovationCard
+                data={item}
+                key={nanoid()}
+              />
+            ))}
+          </ul>
+        </div>
+      </AnimatedContainer>
     </section>
   );
 };

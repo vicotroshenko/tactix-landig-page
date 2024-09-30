@@ -1,6 +1,7 @@
 import { nanoid } from 'nanoid';
 import React from 'react';
 
+import AnimatedContainer from '../AnimatedContainer/AnimatedContainer.component';
 import Title from '../Title/Title.component';
 import './Voices.scss';
 import VoicesCard from './VoicesCard/VoicesCard.component';
@@ -13,21 +14,23 @@ const Voices = () => {
       className="voices"
       id="FAQ"
     >
-      <div className="voices_container">
-        <Title
-          title={title}
-          amount={4}
-          color="GREY"
-        />
-        <ul className="voices_list">
-          {data.map((item) => (
-            <VoicesCard
-              item={item}
-              key={nanoid()}
-            />
-          ))}
-        </ul>
-      </div>
+      <AnimatedContainer>
+        <div className="voices_container">
+          <Title
+            title={title}
+            amount={4}
+            color="GREY"
+          />
+          <ul className="voices_list">
+            {data.map((item) => (
+              <VoicesCard
+                item={item}
+                key={nanoid()}
+              />
+            ))}
+          </ul>
+        </div>
+      </AnimatedContainer>
     </section>
   );
 };

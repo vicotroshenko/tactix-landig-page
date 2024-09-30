@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid';
 import React, { useState } from 'react';
 
 import formImage from '../../assets/images/jpg/Image.jpg';
+import AnimatedContainer from '../AnimatedContainer/AnimatedContainer.component';
 import Modal from '../Modal/Modal.component';
 import SuccessMessage from '../Modal/SuccessMessage/SuccessMessage.component';
 import Title from '../Title/Title.component';
@@ -27,38 +28,40 @@ const ContactUs = () => {
       className="contact_us"
       id="contact us"
     >
-      <Modal
-        visible={visible}
-        toggle={toggleSuccessModal}
-      >
-        <SuccessMessage />
-      </Modal>
-      <div className="contact_us_container">
-        <Title
-          title={title}
-          amount={2}
-          color="WHITE"
-        />
-        <ul className="contact_us_list">
-          {data.map(({ icon, text1, text2 }) => (
-            <OurServices
-              icon={icon}
-              text1={text1}
-              text2={text2}
-              key={nanoid()}
-            />
-          ))}
-        </ul>
-        <div className="contact_us_form_wrapper">
-          <Form onSubmit={handleSubmitForm} />
-          <div className="contact_us_image">
-            <img
-              src={formImage}
-              alt="a man with laptop "
-            />
+      <AnimatedContainer>
+        <Modal
+          visible={visible}
+          toggle={toggleSuccessModal}
+        >
+          <SuccessMessage />
+        </Modal>
+        <div className="contact_us_container">
+          <Title
+            title={title}
+            amount={2}
+            color="WHITE"
+          />
+          <ul className="contact_us_list">
+            {data.map(({ icon, text1, text2 }) => (
+              <OurServices
+                icon={icon}
+                text1={text1}
+                text2={text2}
+                key={nanoid()}
+              />
+            ))}
+          </ul>
+          <div className="contact_us_form_wrapper">
+            <Form onSubmit={handleSubmitForm} />
+            <div className="contact_us_image">
+              <img
+                src={formImage}
+                alt="a man with laptop "
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </AnimatedContainer>
     </section>
   );
 };

@@ -1,20 +1,25 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
 @import '../../../styles/placeholders.scss';
+$deg: 0;
 
 .custom_field {
   position: relative;
-
   & > input {
+    position: relative;
     width: 100%;
-    border: 1px solid $bg-13-input-color;
+    outline: none;
+    border: none;
     padding: 15px 24px;
-    border-radius: 12px;
+    border-radius: 10px;
     font-size: $text-size-regular;
     line-height: $line-height-regular;
     letter-spacing: -0.005em;
     color: $text-color-secondary-5;
-
+    z-index: 2;
+    &:focus ~ span {
+      inset: -3px;
+    }
     &:focus + label {
       top: 0;
     }
@@ -33,6 +38,40 @@
     color: $text-color-secondary-5;
     text-transform: capitalize;
     transition: top 0.3s linear;
+    z-index: 3;
+  }
+  & > span {
+    position: absolute;
+    inset: -2px;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(
+        45deg,
+        $text-color-green 0%,
+        $text-color-green 20%,
+        $bg-8-color 40%,
+        $bg-8-color 60%,
+        $bg-4-color 80%,
+        $bg-4-color 100%
+      );
+      background-size: 400% 400%;
+      animation: animate 6s linear infinite;
+    }
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 0;
   }
 }
 

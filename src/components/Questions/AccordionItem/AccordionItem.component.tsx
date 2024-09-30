@@ -22,9 +22,11 @@ const AccordionItem: React.FC<AccordionProps> = ({ item }) => {
     >
       <h2>
         <p>{item.title}</p>
-        <div className={classNames("accordion_title_icon", {
-          'title_icon_active': active
-        })}>
+        <div
+          className={classNames('accordion_title_icon', {
+            title_icon_active: active,
+          })}
+        >
           <FaPlus />
         </div>
       </h2>

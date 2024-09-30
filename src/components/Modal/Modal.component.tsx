@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -40,12 +40,25 @@ const Modal: React.FC<ModalProps> = ({
   };
   return modalRoot
     ? createPortal(
-        <div
-          className={classNames('backdrop', { backdrop_show: visible })}
-          onClick={handleBackdropClick}
-        >
-          {children}
-        </div>,
+        <AnimatePresence>
+          {visible && (
+            <motion.div
+              initial={{ opacity: 0, x: '100vw' }}
+              animate={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 0.35,
+                },
+              }}
+              exit={{ opacity: 0 }}
+              className="backdrop"
+              onClick={handleBackdropClick}
+            >
+              {children}
+            </motion.div>
+          )}
+        </AnimatePresence>,
         modalRoot
       )
     : null;

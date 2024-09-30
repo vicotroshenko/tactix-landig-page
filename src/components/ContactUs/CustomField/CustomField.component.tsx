@@ -28,6 +28,7 @@ const CustomField: React.FC<CustomFieldProps> = ({
           id={name}
         />
         <label htmlFor={name}>{label}</label>
+        <span></span>
       </div>
       {errors?.[name] && touched?.[name] && (
         <p

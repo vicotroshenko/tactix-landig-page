@@ -8,37 +8,4 @@
   inset: 0;
   background-color: transparent;
   z-index: 115;
-  display: none;
-
-  &.backdrop_show {
-    display: block;
-
-    & > .mobile_menu {
-      animation: openModal 0.3s linear;
-    }
-
-    & > .success_modal {
-      animation: openSuccessModal 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-  }
-}
-
-@keyframes openSuccessModal {
-  0% {
-    transform: scale(0.6) translate(-50%, -50%);
-  }
-
-  100% {
-    transform: scale(1) translate(-50%, -50%);
-  }
-}
-
-@keyframes openModal {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
 }

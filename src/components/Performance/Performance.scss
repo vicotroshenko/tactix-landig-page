@@ -6,7 +6,7 @@
   width: 100%;
   color: $bg-2-color;
   background-color: $bg-1-color;
-
+  overflow: hidden;
   &_container {
     @extend %section_container;
   }

@@ -4,7 +4,7 @@
 
 .dig_service {
   background-color: $bg-4-color;
-
+  overflow: hidden;
   &_container {
     @extend %section_container;
   }

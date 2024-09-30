@@ -18,7 +18,7 @@
 .inn {
   width: 100%;
   background-color: $bg-3-color;
-
+  overflow: hidden;
   &_container {
     @extend %section_container;
   }
