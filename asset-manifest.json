@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tactix-landig-page/static/css/main.8ecd377d.css",
-    "main.js": "/tactix-landig-page/static/js/main.bd2cf0c1.js",
+    "main.css": "/tactix-landig-page/static/css/main.4e6bf696.css",
+    "main.js": "/tactix-landig-page/static/js/main.070881a5.js",
     "static/media/Image.jpg": "/tactix-landig-page/static/media/Image.3ac7a68a21b396968ecd.jpg",
     "static/media/ClashDisplay-Variable.ttf": "/tactix-landig-page/static/media/ClashDisplay-Variable.e7f67b72cbf79f80c9c7.ttf",
     "static/media/hero-2-2.svg": "/tactix-landig-page/static/media/hero-2-2.24ccc73cb4b8cde17355ccd97142e525.svg",
@@ -59,11 +59,11 @@
     "static/media/envelop.svg": "/tactix-landig-page/static/media/envelop.60fb2caa7fb256495094ebbff23e7de6.svg",
     "static/media/digital-5.svg": "/tactix-landig-page/static/media/digital-5.812099e52fd7f380ba49a5429daa1b59.svg",
     "static/media/digital-4.svg": "/tactix-landig-page/static/media/digital-4.0bb306ec76420bae8f3a763ca2b9d3d9.svg",
-    "main.8ecd377d.css.map": "/tactix-landig-page/static/css/main.8ecd377d.css.map",
-    "main.bd2cf0c1.js.map": "/tactix-landig-page/static/js/main.bd2cf0c1.js.map"
+    "main.4e6bf696.css.map": "/tactix-landig-page/static/css/main.4e6bf696.css.map",
+    "main.070881a5.js.map": "/tactix-landig-page/static/js/main.070881a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ecd377d.css",
-    "static/js/main.bd2cf0c1.js"
+    "static/css/main.4e6bf696.css",
+    "static/js/main.070881a5.js"
   ]
 }
